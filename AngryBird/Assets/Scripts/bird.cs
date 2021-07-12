@@ -5,10 +5,14 @@ using UnityEngine;
 public class bird : MonoBehaviour
 {
     private bool isClick = false;
-    public Transform rightPos;
     public float maxDis = 3f;
     private SpringJoint2D sp;
     private Rigidbody2D rg;
+
+    public Transform rightPos;
+    public LineRenderer right;
+    public Transform leftPos;
+    public LineRenderer left;
 
     private void Awake()
     {
@@ -27,8 +31,8 @@ public class bird : MonoBehaviour
     private void OnMouseUp()
     {
         isClick = false;
-        rg.isKinematic = false;
-        Invoke("Fly", 0.1f);
+        rg.isKinematic = false;//脚本物理学失活
+        Invoke("Fly", 0.1f);//固定时间执行方法
         
     }
     private void Update()
@@ -44,6 +48,7 @@ public class bird : MonoBehaviour
                 pos *= maxDis;//最大长度的向量
                 transform.position = pos + rightPos.position;//赋给小鸟的位置
             }
+            Line();
         }
         //如果鼠标左键按住不放时
         //if (Input.GetMouseButton(0))
@@ -55,5 +60,17 @@ public class bird : MonoBehaviour
     void Fly()
     {
         sp.enabled = false;
+    }
+    /// <summary>
+    ///画线
+    /// </summary>
+
+    void Line()
+    {
+        right.SetPosition(0, rightPos.position);
+        right.SetPosition(1, transform.position);
+
+        left.SetPosition(0, leftPos.position);
+        left.SetPosition(1, transform.position);
     }
 }

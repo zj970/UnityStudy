@@ -601,10 +601,10 @@ TextureImporter:
       name: BIRDS_1_16
       rect:
         serializedVersion: 2
-        x: 328
-        y: 790
-        width: 110
-        height: 50
+        x: 306
+        y: 701
+        width: 143
+        height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,10 +641,10 @@ TextureImporter:
       name: BIRDS_1_18
       rect:
         serializedVersion: 2
-        x: 495
-        y: 826
-        width: 28
-        height: 14
+        x: 447
+        y: 703
+        width: 129
+        height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,9 +762,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 169
-        y: 749
-        width: 16
-        height: 30
+        y: 702
+        width: 134
+        height: 140
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1701,10 +1701,10 @@ TextureImporter:
       name: BIRDS_1_71
       rect:
         serializedVersion: 2
-        x: 54
-        y: 483
-        width: 104
-        height: 47
+        x: 38
+        y: 408
+        width: 129
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
