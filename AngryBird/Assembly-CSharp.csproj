@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\bird.cs" />
     <Compile Include="Assets\Scripts\boom.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\pig.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityDate/AngryBird/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

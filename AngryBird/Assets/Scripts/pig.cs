@@ -8,8 +8,9 @@ public class pig : MonoBehaviour
     public float minSpeed = 5f;
     private SpriteRenderer render;
     public Sprite hurt;//受伤后的图片
-    public GameObject boom;
-    public GameObject score;
+    public GameObject boom;//存放特效对像
+    public GameObject score;//存放分数对象
+    public bool isPig = false;//判定是否为猪
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class pig : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         print(collision.relativeVelocity.magnitude);
+        //Invoke("Next", 0.5f);
         if (collision.relativeVelocity.magnitude > maxSpeed)//直接死了
         {
             Dead();
@@ -30,7 +32,11 @@ public class pig : MonoBehaviour
     }
     void Dead()
     {
-        Destroy(gameObject);
+        if (isPig)
+        {
+            GameManager._instance.pigs.Remove(this);
+        }
+        Destroy(gameObject);//清除对象
         Instantiate(boom, transform.position, Quaternion.identity);
 
         GameObject go = Instantiate(score, transform.position+new Vector3(0,0.65f,0), Quaternion.identity);

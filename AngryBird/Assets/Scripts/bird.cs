@@ -6,13 +6,16 @@ public class bird : MonoBehaviour
 {
     private bool isClick = false;
     public float maxDis = 3f;
-    private SpringJoint2D sp;
+    [HideInInspector]
+    public SpringJoint2D sp;//隐藏
     private Rigidbody2D rg;
 
     public Transform rightPos;
     public LineRenderer right;
     public Transform leftPos;
     public LineRenderer left;
+
+    public GameObject boom_bird;
 
     private void Awake()
     {
@@ -60,6 +63,7 @@ public class bird : MonoBehaviour
     void Fly()
     {
         sp.enabled = false;
+        Invoke("Next", 5f);
     }
     /// <summary>
     ///画线
@@ -72,5 +76,16 @@ public class bird : MonoBehaviour
 
         left.SetPosition(0, leftPos.position);
         left.SetPosition(1, transform.position);
+    }
+
+    /// <summary>
+    /// 下一只小鸟的飞出
+    /// </summary>
+    void Next()
+    {
+        GameManager._instance.birds.Remove(this);
+        Destroy(gameObject);
+        Instantiate(boom_bird, transform.position, Quaternion.identity);
+        GameManager._instance.NextBird();
     }
 }
