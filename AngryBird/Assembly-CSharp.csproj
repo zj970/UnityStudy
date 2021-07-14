@@ -64,10 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\PocketRPG Trails\Scripts\Effects\WeaponTrail.cs" />
+    <Compile Include="Assets\PocketRPG Trails\Scripts\Entities\BladeMaster.cs" />
+    <Compile Include="Assets\PocketRPG Trails\Scripts\Utility\AnimationController.cs" />
     <Compile Include="Assets\Scripts\bird.cs" />
     <Compile Include="Assets\Scripts\boom.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\pig.cs" />
+    <Compile Include="Assets\Scripts\TestMyTrail.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityDate/AngryBird/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -17,10 +17,13 @@ public class bird : MonoBehaviour
 
     public GameObject boom_bird;
 
+    private TestMyTrail myTrail;
+
     private void Awake()
     {
         sp = GetComponent<SpringJoint2D>();
         rg = GetComponent<Rigidbody2D>();
+        myTrail = GetComponent<TestMyTrail>();
     }
 
     //鼠标按下
@@ -36,7 +39,9 @@ public class bird : MonoBehaviour
         isClick = false;
         rg.isKinematic = false;//脚本物理学失活
         Invoke("Fly", 0.1f);//固定时间执行方法
-        
+        //禁用画线组件
+        right.enabled = false;
+        left.enabled = false;
     }
     private void Update()
     {
@@ -62,6 +67,7 @@ public class bird : MonoBehaviour
     }
     void Fly()
     {
+        myTrail.StartTrails();
         sp.enabled = false;
         Invoke("Next", 5f);
     }
@@ -71,6 +77,9 @@ public class bird : MonoBehaviour
 
     void Line()
     {
+        right.enabled = true;
+        left.enabled = true;
+
         right.SetPosition(0, rightPos.position);
         right.SetPosition(1, transform.position);
 
@@ -87,5 +96,9 @@ public class bird : MonoBehaviour
         Destroy(gameObject);
         Instantiate(boom_bird, transform.position, Quaternion.identity);
         GameManager._instance.NextBird();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        myTrail.ClearTrails();
     }
 }
