@@ -11,6 +11,7 @@ public class pig : MonoBehaviour
     public GameObject boom;//存放特效对像
     public GameObject score;//存放分数对象
     public bool isPig = false;//判定是否为猪
+    public bool isBlack = false;//判定是否为木块
 
     private void Awake()
     {
@@ -46,4 +47,6 @@ public class pig : MonoBehaviour
     //{
         
     //}
+    void die() 
+    { }
 }
