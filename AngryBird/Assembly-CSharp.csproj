@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\boom.cs" />
     <Compile Include="Assets\Scripts\pig.cs" />
     <Compile Include="Assets\Scripts\TestMyTrail.cs" />
+    <Compile Include="Assets\Scripts\win.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityDate/AngryBird/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

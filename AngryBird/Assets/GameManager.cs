@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
     private Vector3 originPos;//初始化的位置
 
+    public GameObject win;
+    public GameObject lose;
+
+    public GameObject[] stars;//储存星级
+
 
     private void Awake()
     {
@@ -61,11 +66,33 @@ public class GameManager : MonoBehaviour
             else
             {
                 //输了
+                lose.SetActive(true);
+
             }
         }
         else
         {
             //赢了
+            win.SetActive(true);
         }
     }
+    
+
+    /// <summary>
+    /// 显示星星
+    /// </summary>
+    public void ShowStart()
+    {
+        StartCoroutine("show");
+    }
+
+    IEnumerator show()
+    {
+        for (int i = 0; i < birds.Count + 1; i++)
+        {
+            yield return new WaitForSeconds(0.2f);
+            stars[i].SetActive(true);
+        }
+    }
+
 }

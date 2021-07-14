@@ -11,7 +11,7 @@ public class pig : MonoBehaviour
     public GameObject boom;//存放特效对像
     public GameObject score;//存放分数对象
     public bool isPig = false;//判定是否为猪
-    public bool isBlack = false;//判定是否为木块
+    //public bool isBlock = false;//判定是否为木块
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class pig : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        print(collision.relativeVelocity.magnitude);
+        //print(collision.relativeVelocity.magnitude);
         //Invoke("Next", 0.5f);
         if (collision.relativeVelocity.magnitude > maxSpeed)//直接死了
         {
@@ -47,6 +47,5 @@ public class pig : MonoBehaviour
     //{
         
     //}
-    void die() 
-    { }
+   
 }
