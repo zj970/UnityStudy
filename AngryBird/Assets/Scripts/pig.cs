@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pig : MonoBehaviour
 {
-    public float maxSpeed = 10f;
+    public float maxSpeed = 10f;//速度决定血量
     public float minSpeed = 5f;
     private SpriteRenderer render;
     public Sprite hurt;//受伤后的图片
@@ -15,10 +15,10 @@ public class pig : MonoBehaviour
 
     private void Awake()
     {
-        render = GetComponent<SpriteRenderer>();
+        render = GetComponent<SpriteRenderer>();//开始就获取
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)//两个刚体之间的接触就调用
     {
         //print(collision.relativeVelocity.magnitude);
         //Invoke("Next", 0.5f);
@@ -28,9 +28,13 @@ public class pig : MonoBehaviour
 
         }else if(collision.relativeVelocity.magnitude > minSpeed && collision.relativeVelocity.magnitude < maxSpeed)
         {
-            render.sprite = hurt;
+            render.sprite = hurt;//切换成受伤的图片
         }
     }
+    
+    /// <summary>
+    /// 处理猪死亡
+    /// </summary>
     void Dead()
     {
         if (isPig)
@@ -40,7 +44,7 @@ public class pig : MonoBehaviour
         Destroy(gameObject);//清除对象
         Instantiate(boom, transform.position, Quaternion.identity);
 
-        GameObject go = Instantiate(score, transform.position+new Vector3(0,0.65f,0), Quaternion.identity);
+        GameObject go = Instantiate(score, transform.position+new Vector3(0,0.65f,0), Quaternion.identity);//显示分数
         Destroy(go, 1.5f);
     }
     //private void OnTriggerEnter2D(Collider2D collision)

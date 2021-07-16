@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class bird : MonoBehaviour
 {
-    private bool isClick = false;
-    public float maxDis = 3f;
+    private bool isClick = false;//定义一个鼠标是否按下的布尔值，按下为真，抬起为假
+    public float maxDis = 3f;//定义弹绳的长度
     [HideInInspector]
-    public SpringJoint2D sp;//隐藏
-    private Rigidbody2D rg;
+    public SpringJoint2D sp;//隐藏SpringJoint2D
+    private Rigidbody2D rg;//定义一个刚体，用
 
-    public Transform rightPos;
-    public LineRenderer right;
-    public Transform leftPos;
-    public LineRenderer left;
+    public Transform rightPos;//定义右边的位置变化
+    public LineRenderer right;//画线右边
+    public Transform leftPos;//定义左边的位置变化
+    public LineRenderer left;//画线左边
 
-    public GameObject boom_bird;
+    public GameObject boom_bird;//定义一个GameObject对象，储存动画播放
 
-    private TestMyTrail myTrail;
+
+    private TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
 
     private void Awake()
     {
@@ -57,6 +58,7 @@ public class bird : MonoBehaviour
                 transform.position = pos + rightPos.position;//赋给小鸟的位置
             }
             Line();
+           
         }
         //如果鼠标左键按住不放时
         //if (Input.GetMouseButton(0))
@@ -65,10 +67,14 @@ public class bird : MonoBehaviour
         //    this.transform.position = new Vector3(0, 0, 10);
         //}
     }
+
+    /// <summary>
+    /// 小鸟飞行方法
+    /// </summary>
     void Fly()
     {
-        myTrail.StartTrails();
-        sp.enabled = false;
+        myTrail.StartTrails();//开始拖尾
+        sp.enabled = false;//释放弹力
         Invoke("Next", 5f);
     }
     /// <summary>
@@ -77,9 +83,9 @@ public class bird : MonoBehaviour
 
     void Line()
     {
-        right.enabled = true;
+        right.enabled = true;//激活
         left.enabled = true;
-
+        //两点确定一条直线
         right.SetPosition(0, rightPos.position);
         right.SetPosition(1, transform.position);
 
@@ -92,13 +98,13 @@ public class bird : MonoBehaviour
     /// </summary>
     void Next()
     {
-        GameManager._instance.birds.Remove(this);
-        Destroy(gameObject);
-        Instantiate(boom_bird, transform.position, Quaternion.identity);
-        GameManager._instance.NextBird();
+        GameManager._instance.birds.Remove(this);//移除当前的小鸟
+        Destroy(gameObject);//失活小鸟
+        Instantiate(boom_bird, transform.position, Quaternion.identity);//播放
+        GameManager._instance.NextBird();//下一只鸟的逻辑
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        myTrail.ClearTrails();
+        myTrail.ClearTrails();//清除拖尾
     }
 }
