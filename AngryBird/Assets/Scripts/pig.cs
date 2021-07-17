@@ -11,6 +11,10 @@ public class pig : MonoBehaviour
     public GameObject boom;//存放特效对像
     public GameObject score;//存放分数对象
     public bool isPig = false;//判定是否为猪
+
+    public AudioClip hurtCollision;//存储声音
+    public AudioClip dead;
+    public AudioClip birdCollision;
     //public bool isBlock = false;//判定是否为木块
 
     private void Awake()
@@ -22,6 +26,12 @@ public class pig : MonoBehaviour
     {
         //print(collision.relativeVelocity.magnitude);
         //Invoke("Next", 0.5f);
+
+        if (collision.gameObject.tag == "Player")
+        {
+            AudioPlay(birdCollision);
+        }
+
         if (collision.relativeVelocity.magnitude > maxSpeed)//直接死了
         {
             Dead();
@@ -29,6 +39,7 @@ public class pig : MonoBehaviour
         }else if(collision.relativeVelocity.magnitude > minSpeed && collision.relativeVelocity.magnitude < maxSpeed)
         {
             render.sprite = hurt;//切换成受伤的图片
+            AudioPlay(hurtCollision);
         }
     }
     
@@ -44,12 +55,17 @@ public class pig : MonoBehaviour
         Destroy(gameObject);//清除对象
         Instantiate(boom, transform.position, Quaternion.identity);
 
+        AudioPlay(dead);
+
         GameObject go = Instantiate(score, transform.position+new Vector3(0,0.65f,0), Quaternion.identity);//显示分数
         Destroy(go, 1.5f);
     }
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-        
+
     //}
-   
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
+    }
 }

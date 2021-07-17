@@ -147,3 +147,6 @@ MonoBehaviour:
   boom: {fileID: 614876891847311606, guid: d9aebe727cfacea4083500410b4dddee, type: 3}
   score: {fileID: 2307857337479175943, guid: 15de60c6ae3fec142a73383e522db181, type: 3}
   isPig: 0
+  hurtCollision: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+  dead: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+  birdCollision: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}

@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public List<bird> birds;//存放多只小鸟
+    public List<Bird> birds;//存放多只小鸟
     public List<pig> pigs;//存放多只猪
     public static GameManager _instance;//
     private Vector3 originPos;//初始化的位置
 
     public GameObject win;//赢的对象
     public GameObject lose;//输的对象
+
+    public GameObject pausepanel;
 
     public GameObject[] stars;//储存星级
 
@@ -67,6 +70,8 @@ public class GameManager : MonoBehaviour
             {
                 //输了
                 lose.SetActive(true);
+                pausepanel.SetActive(false);
+                
 
             }
         }
@@ -74,6 +79,7 @@ public class GameManager : MonoBehaviour
         {
             //赢了
             win.SetActive(true);
+            pausepanel.SetActive(false);
         }
     }
     
@@ -95,4 +101,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(2);
+        //print("点击了retry");
+    }
+
+    public void Home()
+    {
+        //print("点击了Home");
+        SceneManager.LoadScene(1);
+        
+    }
 }

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bird : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     private bool isClick = false;//定义一个鼠标是否按下的布尔值，按下为真，抬起为假
     public float maxDis = 3f;//定义弹绳的长度
     [HideInInspector]
     public SpringJoint2D sp;//隐藏SpringJoint2D
-    private Rigidbody2D rg;//定义一个刚体，用
+    protected Rigidbody2D rg;//定义一个刚体，用于
 
     public Transform rightPos;//定义右边的位置变化
     public LineRenderer right;//画线右边
@@ -22,6 +22,15 @@ public class bird : MonoBehaviour
 
     private bool canMove = true;//用于防止小鸟飞出去后还回到弹弓上
 
+    public float smooth = 3f;//Lerp平滑度
+
+    public AudioClip select;//播放音效
+    public AudioClip fly;
+
+    //
+    private bool isFly = false;
+
+   
 
     private void Awake()
     {
@@ -35,6 +44,7 @@ public class bird : MonoBehaviour
     {
         if (canMove)//用于防止小鸟飞出去后还回到弹弓上
         {
+            AudioPlay(select);
             isClick = true;
             rg.isKinematic = true;
         }
@@ -72,6 +82,19 @@ public class bird : MonoBehaviour
             Line();
            
         }
+
+        //相机跟随
+        float posX = transform.position.x;//只需要改变相机的X值
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(Mathf.Clamp(posX, 0, 15), Camera.main.transform.position.y, Camera.main.transform.position.z),smooth*Time.deltaTime);//Lerp平滑移动
+
+        if (isFly)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                ShowSkill();
+            }
+        }
+
         //如果鼠标左键按住不放时
         //if (Input.GetMouseButton(0))
         //{
@@ -85,6 +108,8 @@ public class bird : MonoBehaviour
     /// </summary>
     void Fly()
     {
+        isFly = true;
+        AudioPlay(fly);
         myTrail.StartTrails();//开始拖尾
         sp.enabled = false;//释放弹力
         Invoke("Next", 5f);
@@ -117,6 +142,20 @@ public class bird : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        isFly = false;
         myTrail.ClearTrails();//清除拖尾
+    }
+
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
+    }
+
+    /// <summary>
+    /// 炫技操作
+    /// </summary>
+    public  virtual void ShowSkill()//改成虚方法
+    {
+        isFly = false;
     }
 }
