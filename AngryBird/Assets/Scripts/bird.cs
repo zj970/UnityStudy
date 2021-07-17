@@ -20,6 +20,9 @@ public class bird : MonoBehaviour
 
     private TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
 
+    private bool canMove = true;//用于防止小鸟飞出去后还回到弹弓上
+
+
     private void Awake()
     {
         sp = GetComponent<SpringJoint2D>();
@@ -30,19 +33,28 @@ public class bird : MonoBehaviour
     //鼠标按下
     private void OnMouseDown()
     {
-        isClick = true;
-        rg.isKinematic = true;
+        if (canMove)//用于防止小鸟飞出去后还回到弹弓上
+        {
+            isClick = true;
+            rg.isKinematic = true;
+        }
+      
     }
 
     //鼠标抬起
     private void OnMouseUp()
     {
-        isClick = false;
-        rg.isKinematic = false;//脚本物理学失活
-        Invoke("Fly", 0.1f);//固定时间执行方法
-        //禁用画线组件
-        right.enabled = false;
-        left.enabled = false;
+        if(canMove)//用于防止小鸟飞出去后还回到弹弓上
+        {
+            isClick = false;
+            rg.isKinematic = false;//脚本物理学失活
+            Invoke("Fly", 0.1f);//固定时间执行方法
+                                //禁用画线组件
+            right.enabled = false;
+            left.enabled = false;
+            canMove = false;
+        }
+       
     }
     private void Update()
     {
