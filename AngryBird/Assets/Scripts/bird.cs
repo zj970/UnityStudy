@@ -16,7 +16,8 @@ public class Bird : MonoBehaviour
     public LineRenderer left;//画线左边
 
     public GameObject boom_bird;//定义一个GameObject对象，储存动画播放
-
+    public Sprite birdHurt;//添加小鸟受伤图片
+    private SpriteRenderer birdRender;
 
     private TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
 
@@ -37,6 +38,7 @@ public class Bird : MonoBehaviour
         sp = GetComponent<SpringJoint2D>();
         rg = GetComponent<Rigidbody2D>();
         myTrail = GetComponent<TestMyTrail>();
+        birdRender = GetComponent<SpriteRenderer>();
     }
 
     //鼠标按下
@@ -144,6 +146,8 @@ public class Bird : MonoBehaviour
     {
         isFly = false;
         myTrail.ClearTrails();//清除拖尾
+        
+
     }
 
     public void AudioPlay(AudioClip clip)
@@ -157,5 +161,10 @@ public class Bird : MonoBehaviour
     public  virtual void ShowSkill()//改成虚方法
     {
         isFly = false;
+    }
+
+    public void BirdHurt()
+    {
+        birdRender.sprite = birdHurt;
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7093574207559712790}
   m_Layer: 0
   m_Name: woodLong
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 10
   minSpeed: 5
-  hurt: {fileID: 21300188, guid: 8b99000cb683daa4aaeab038dd06b707, type: 3}
+  pigHurt: {fileID: 21300188, guid: 8b99000cb683daa4aaeab038dd06b707, type: 3}
   boom: {fileID: 614876891847311606, guid: d9aebe727cfacea4083500410b4dddee, type: 3}
   score: {fileID: 2307857337479175943, guid: 15de60c6ae3fec142a73383e522db181, type: 3}
   isPig: 0

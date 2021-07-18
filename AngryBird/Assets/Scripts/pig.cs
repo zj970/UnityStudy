@@ -7,7 +7,7 @@ public class pig : MonoBehaviour
     public float maxSpeed = 10f;//速度决定血量
     public float minSpeed = 5f;
     private SpriteRenderer render;
-    public Sprite hurt;//受伤后的图片
+    public Sprite pigHurt;//受伤后的图片
     public GameObject boom;//存放特效对像
     public GameObject score;//存放分数对象
     public bool isPig = false;//判定是否为猪
@@ -27,9 +27,10 @@ public class pig : MonoBehaviour
         //print(collision.relativeVelocity.magnitude);
         //Invoke("Next", 0.5f);
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")//碰撞到Player受伤
         {
             AudioPlay(birdCollision);
+            collision.transform.GetComponent<Bird>().BirdHurt();
         }
 
         if (collision.relativeVelocity.magnitude > maxSpeed)//直接死了
@@ -38,7 +39,7 @@ public class pig : MonoBehaviour
 
         }else if(collision.relativeVelocity.magnitude > minSpeed && collision.relativeVelocity.magnitude < maxSpeed)
         {
-            render.sprite = hurt;//切换成受伤的图片
+            render.sprite = pigHurt;//切换成受伤的图片
             AudioPlay(hurtCollision);
         }
     }

@@ -69,8 +69,9 @@
     <Compile Include="Assets\PocketRPG Trails\Scripts\Entities\BladeMaster.cs" />
     <Compile Include="Assets\PocketRPG Trails\Scripts\Utility\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Bird.cs" />
+    <Compile Include="Assets\Scripts\BlackBird.cs" />
     <Compile Include="Assets\Scripts\boom.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\Scripts\GreenBird.cs" />
     <Compile Include="Assets\Scripts\pausePanel.cs" />
     <Compile Include="Assets\Scripts\pig.cs" />
     <Compile Include="Assets\Scripts\TestMyTrail.cs" />

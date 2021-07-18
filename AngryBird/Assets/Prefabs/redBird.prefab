@@ -162,6 +162,10 @@ MonoBehaviour:
   left: {fileID: 0}
   boom_bird: {fileID: 614876891847311606, guid: d9aebe727cfacea4083500410b4dddee,
     type: 3}
+  birdHurt: {fileID: 21300322, guid: 7f54faac0aa0f654bbbc596164481c55, type: 3}
+  smooth: 3
+  select: {fileID: 0}
+  fly: {fileID: 0}
 --- !u!114 &4338774641799459923
 MonoBehaviour:
   m_ObjectHideFlags: 0

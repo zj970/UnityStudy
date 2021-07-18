@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5661894881002830176}
   m_Layer: 0
   m_Name: pig
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 8
   minSpeed: 2
-  hurt: {fileID: 21300208, guid: 7f54faac0aa0f654bbbc596164481c55, type: 3}
+  pigHurt: {fileID: 0}
   boom: {fileID: 614876891847311606, guid: d9aebe727cfacea4083500410b4dddee, type: 3}
   score: {fileID: 2093134871882358069, guid: 2692904ec867d214c86f1318545e525d, type: 3}
   isPig: 1
