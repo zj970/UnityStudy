@@ -26,6 +26,14 @@ public class pausePanel : MonoBehaviour
         anim.SetBool("isPause",true);
         button.SetActive(false);
 
+        if (GameManager._instance.birds.Count > 0)
+        {
+            if (GameManager._instance.birds[0].isReleased == false)//没有飞出
+            {
+                GameManager._instance.birds[0].canMove = false;
+            }
+        }
+
     }
 
 
@@ -38,6 +46,13 @@ public class pausePanel : MonoBehaviour
         Time.timeScale = 1;//
         anim.SetBool("isPause", false);
         button.SetActive(true);
+        if (GameManager._instance.birds.Count > 0)
+        {
+            if (GameManager._instance.birds[0].isReleased == false)//没有飞出
+            {
+                GameManager._instance.birds[0].canMove = true;
+            }
+        }
     }
 
 

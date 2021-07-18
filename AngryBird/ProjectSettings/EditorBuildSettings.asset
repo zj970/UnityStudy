@@ -7,10 +7,10 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/00-Loading.unity
-    guid: 4ce8f3fc73f82074db178b4a7d2f1c43
+    guid: 3d682af9a69420540af578aba47e57f0
   - enabled: 1
     path: Assets/Scenes/01-level.unity
-    guid: c71a62c22690e06409db3eb1e7310651
+    guid: 03f75d3841451c04791679c7938877aa
   - enabled: 1
     path: Assets/Scenes/02-game.unity
     guid: 6ebeb3b57af7f684091d66a11357d1e3

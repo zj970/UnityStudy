@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Bird : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Bird : MonoBehaviour
     public SpringJoint2D sp;//隐藏SpringJoint2D
     protected Rigidbody2D rg;//定义一个刚体，用于
 
+   
     public Transform rightPos;//定义右边的位置变化
     public LineRenderer right;//画线右边
     public Transform leftPos;//定义左边的位置变化
@@ -22,7 +24,8 @@ public class Bird : MonoBehaviour
 
     protected TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
 
-    private bool canMove = true;//用于防止小鸟飞出去后还回到弹弓上
+    [HideInInspector]
+    public bool canMove = false;//用于防止小鸟飞出去后还回到弹弓上
 
     public float smooth = 3f;//Lerp平滑度
 
@@ -30,6 +33,7 @@ public class Bird : MonoBehaviour
     public AudioClip fly;
 
     //
+    public bool isReleased = false;//判断鼠标是否松手
     private bool isFly = false;
 
    
@@ -71,6 +75,8 @@ public class Bird : MonoBehaviour
     }
     private void Update()
     {
+        //if (EventSystem.current.IsPointerOverGameObject())//判断是否点击了UI
+        //    return;
         if (isClick)//鼠标一直按下，进行位置的跟随
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -148,8 +154,6 @@ public class Bird : MonoBehaviour
         isFly = false;
         myTrail.ClearTrails();//清除拖尾
         //BirdHurt();
-        
-
     }
 
     public void AudioPlay(AudioClip clip)
@@ -162,6 +166,7 @@ public class Bird : MonoBehaviour
     /// </summary>
     public  virtual void ShowSkill()//改成虚方法
     {
+        isReleased = true;
         isFly = false;
     }
 

@@ -15,8 +15,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject pausepanel;
 
-    public GameObject[] stars;//储存星级
+    public GameObject[] stars;//一个关卡的储存星级
 
+    private int starNum = 0;//储存总星星个数
+
+    private int totalnum = 10;//设置总关卡数
 
     private void Awake()
     {
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
                 birds[i].transform.position = originPos;
                 birds[i].enabled = true;
                 birds[i].sp.enabled = true;
+                birds[i].canMove = true;
             }
             else
             {
@@ -94,30 +98,53 @@ public class GameManager : MonoBehaviour
 
     IEnumerator show()
     {
-        for (int i = 0; i < birds.Count + 1; i++)
+        int i;
+        for ( ; starNum < birds.Count + 1; starNum++)
         {
-            if (i >= stars.Length)
+            if (starNum >= stars.Length)
             {
                 break;
             }
             yield return new WaitForSeconds(0.2f);
-            stars[i].SetActive(true);//第i个星星激活
+            stars[starNum].SetActive(true);//第i个星星激活
         }
+        //starNum += i;
     }
 
 
     public void Replay()
     {
+        SaveData();
         SceneManager.LoadScene(2);
         //print("点击了retry");
     }
 
     public void Home()
     {
+        SaveData();
         //print("点击了Home");
         SceneManager.LoadScene(1);
         
     }
+    /// <summary>
+    /// 存储星星总数的方法
+    /// </summary>
+   public void SaveData()
+    {
+        if(starNum > PlayerPrefs.GetInt(PlayerPrefs.GetString("nowLevel")))
+        {
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"), starNum);
+        }
+        //PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"), starNum);
 
-
+        //存储所有星星个数
+        int sum = 0;
+        for (int i = 1; i <= totalnum; i++)
+        {
+            sum += PlayerPrefs.GetInt("level"+i.ToString());
+        }
+      
+        PlayerPrefs.SetInt("totalNum",sum);
+        print(PlayerPrefs.GetInt("totalNum"));
+    }
 }

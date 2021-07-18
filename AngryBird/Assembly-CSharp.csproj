@@ -72,6 +72,10 @@
     <Compile Include="Assets\Scripts\BlackBird.cs" />
     <Compile Include="Assets\Scripts\boom.cs" />
     <Compile Include="Assets\Scripts\GreenBird.cs" />
+    <Compile Include="Assets\Scripts\LeveSelect.cs" />
+    <Compile Include="Assets\Scripts\Loadlevel.cs" />
+    <Compile Include="Assets\Scripts\LoadLevelAsync.cs" />
+    <Compile Include="Assets\Scripts\MapSelect.cs" />
     <Compile Include="Assets\Scripts\pausePanel.cs" />
     <Compile Include="Assets\Scripts\Pig.cs" />
     <Compile Include="Assets\Scripts\TestMyTrail.cs" />
