@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pig : MonoBehaviour
+public class Pig : MonoBehaviour
 {
     public float maxSpeed = 10f;//速度决定血量
     public float minSpeed = 5f;
@@ -47,7 +47,7 @@ public class pig : MonoBehaviour
     /// <summary>
     /// 处理猪死亡
     /// </summary>
-    void Dead()
+   public void Dead()
     {
         if (isPig)
         {

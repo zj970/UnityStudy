@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public List<Bird> birds;//存放多只小鸟
-    public List<pig> pigs;//存放多只猪
+    public List<Pig> pigs;//存放多只猪
     public static GameManager _instance;//
     private Vector3 originPos;//初始化的位置
 
@@ -96,6 +96,10 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < birds.Count + 1; i++)
         {
+            if (i >= stars.Length)
+            {
+                break;
+            }
             yield return new WaitForSeconds(0.2f);
             stars[i].SetActive(true);//第i个星星激活
         }

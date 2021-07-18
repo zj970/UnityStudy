@@ -16,10 +16,11 @@ public class Bird : MonoBehaviour
     public LineRenderer left;//画线左边
 
     public GameObject boom_bird;//定义一个GameObject对象，储存动画播放
-    public Sprite birdHurt;//添加小鸟受伤图片
-    private SpriteRenderer birdRender;
 
-    private TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
+    public Sprite birdHurt;//添加小鸟受伤图片
+    protected SpriteRenderer birdRender;
+
+    protected TestMyTrail myTrail;//实例化，引用StartTrails()方法，实现拖尾
 
     private bool canMove = true;//用于防止小鸟飞出去后还回到弹弓上
 
@@ -135,7 +136,7 @@ public class Bird : MonoBehaviour
     /// <summary>
     /// 下一只小鸟的飞出
     /// </summary>
-    void Next()
+    protected virtual void Next()
     {
         GameManager._instance.birds.Remove(this);//移除当前的小鸟
         Destroy(gameObject);//失活小鸟
@@ -146,6 +147,7 @@ public class Bird : MonoBehaviour
     {
         isFly = false;
         myTrail.ClearTrails();//清除拖尾
+        //BirdHurt();
         
 
     }
