@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_变量", "Lesson2_变量\Lesson2_变量.csproj", "{51D0D157-8EB5-4893-BAFC-8A3B32F98CDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_变量本质", "Lesson3_变量本质\Lesson3_变量本质.csproj", "{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51D0D157-8EB5-4893-BAFC-8A3B32F98CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D0D157-8EB5-4893-BAFC-8A3B32F98CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D0D157-8EB5-4893-BAFC-8A3B32F98CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D0D157-8EB5-4893-BAFC-8A3B32F98CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ED8B6B4-4F5A-401A-998A-8789CB55511E}
+	EndGlobalSection
+EndGlobal

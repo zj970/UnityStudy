@@ -1,0 +1,12 @@
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.exe
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.deps.json
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.runtimeconfig.json
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.runtimeconfig.dev.json
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.dll
+E:\c\C#\Csharp入门\Lesson2_变量\bin\Debug\netcoreapp3.1\Lesson2_变量.pdb
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.AssemblyInfoInputs.cache
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.AssemblyInfo.cs
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.csproj.CoreCompileInputs.cache
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.dll
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.pdb
+E:\c\C#\Csharp入门\Lesson2_变量\obj\Debug\netcoreapp3.1\Lesson2_变量.genruntimeconfig.cache
