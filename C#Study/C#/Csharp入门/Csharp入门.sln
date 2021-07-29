@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_变量", "Lesson2_�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_变量本质", "Lesson3_变量本质\Lesson3_变量本质.csproj", "{A200A278-5953-4F0A-A1DC-2AC8EF65BA31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4_变量的命名规则", "Lesson4_变量的命名规则\Lesson4_变量的命名规则.csproj", "{70D097D1-8849-4D5D-933F-B95EBFAE4457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson4_变量的命名规则", "Lesson4_变量的命名规则\Lesson4_变量的命名规则.csproj", "{70D097D1-8849-4D5D-933F-B95EBFAE4457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5_常量", "Lesson5_常量\Lesson5_常量.csproj", "{D09EEAE6-A6D2-4D66-A540-07C7BAE0FD42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson5_常量", "Lesson5_常量\Lesson5_常量.csproj", "{D09EEAE6-A6D2-4D66-A540-07C7BAE0FD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6_转义字符", "Lesson6_转义字符\Lesson6_转义字符.csproj", "{C8D00EC7-CB9F-46AB-8083-3FE50F9BD757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D09EEAE6-A6D2-4D66-A540-07C7BAE0FD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D09EEAE6-A6D2-4D66-A540-07C7BAE0FD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D09EEAE6-A6D2-4D66-A540-07C7BAE0FD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D00EC7-CB9F-46AB-8083-3FE50F9BD757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D00EC7-CB9F-46AB-8083-3FE50F9BD757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D00EC7-CB9F-46AB-8083-3FE50F9BD757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D00EC7-CB9F-46AB-8083-3FE50F9BD757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

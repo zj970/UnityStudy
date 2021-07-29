@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.exe
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.deps.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\bin\Debug\netcoreapp3.1\Lesson6_转义字符.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson6_转义字符\obj\Debug\netcoreapp3.1\Lesson6_转义字符.genruntimeconfig.cache

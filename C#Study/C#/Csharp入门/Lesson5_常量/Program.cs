@@ -25,8 +25,9 @@ namespace Lesson5_常量
             name = "周健";
             //作用：声明一些常用不变的变量
             //例如PI，context报文，网址等。。。
-
+            //常量是用来声明一些游戏当中不会变化的量
             #endregion
         }
     }
 }
+
