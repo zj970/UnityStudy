@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.exe
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.deps.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\bin\Debug\netcoreapp3.1\Lesson3_变量本质.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson3_变量本质\obj\Debug\netcoreapp3.1\Lesson3_变量本质.genruntimeconfig.cache
