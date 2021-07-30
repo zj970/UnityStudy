@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.exe
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.deps.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\bin\Debug\netcoreapp3.1\Lesson9_异常捕获.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson10_异常捕获\obj\Debug\netcoreapp3.1\Lesson9_异常捕获.genruntimeconfig.cache
