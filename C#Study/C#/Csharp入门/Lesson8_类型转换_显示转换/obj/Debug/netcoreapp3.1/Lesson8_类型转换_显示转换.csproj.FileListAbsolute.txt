@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.exe
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.deps.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\bin\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.dll
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.pdb
+E:\UnityDate\C#Study\C#\Csharp入门\Lesson8_类型转换_显示转换\obj\Debug\netcoreapp3.1\Lesson8_类型转换_显示转换.genruntimeconfig.cache
