@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.exe
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.deps.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\bin\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson5_值类型和引用类型\obj\Debug\netcoreapp3.1\Lesson5_值类型和引用类型.genruntimeconfig.cache

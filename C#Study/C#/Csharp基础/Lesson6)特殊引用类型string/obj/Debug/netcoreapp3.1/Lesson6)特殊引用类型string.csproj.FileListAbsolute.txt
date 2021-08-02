@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.exe
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.deps.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\bin\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson6)特殊引用类型string\obj\Debug\netcoreapp3.1\Lesson6)特殊引用类型string.genruntimeconfig.cache

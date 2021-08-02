@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.exe
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.deps.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\bin\Debug\netcoreapp3.1\Lsson8_ref和out.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson8_ref和out\obj\Debug\netcoreapp3.1\Lsson8_ref和out.csproj.AssemblyReference.cache

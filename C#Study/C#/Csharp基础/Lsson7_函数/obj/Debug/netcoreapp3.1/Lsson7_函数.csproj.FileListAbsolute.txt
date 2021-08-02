@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.exe
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.deps.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\bin\Debug\netcoreapp3.1\Lsson7_函数.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.dll
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.pdb
+E:\UnityDate\C#Study\C#\Csharp基础\Lsson7_函数\obj\Debug\netcoreapp3.1\Lsson7_函数.genruntimeconfig.cache
