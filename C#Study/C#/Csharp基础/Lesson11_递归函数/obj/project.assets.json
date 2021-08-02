@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson6)特殊引用类型string\\Lesson6_特殊引用类型string.csproj",
-      "projectName": "Lesson6_特殊引用类型string",
-      "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson6)特殊引用类型string\\Lesson6_特殊引用类型string.csproj",
+      "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson11_递归函数\\Lesson11_递归函数.csproj",
+      "projectName": "Lesson11_递归函数",
+      "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson11_递归函数\\Lesson11_递归函数.csproj",
       "packagesPath": "C:\\Users\\周建\\.nuget\\packages\\",
-      "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson6)特殊引用类型string\\obj\\",
+      "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson11_递归函数\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\周建\\AppData\\Roaming\\NuGet\\NuGet.Config",
