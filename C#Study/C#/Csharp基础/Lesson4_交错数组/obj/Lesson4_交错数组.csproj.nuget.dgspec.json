@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj": {}
+    "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson4_交错数组\\Lesson4_交错数组.csproj": {}
   },
   "projects": {
-    "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj": {
+    "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson4_交错数组\\Lesson4_交错数组.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj",
-        "projectName": "Lesson1_枚举",
-        "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj",
+        "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson4_交错数组\\Lesson4_交错数组.csproj",
+        "projectName": "Lesson4_交错数组",
+        "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson4_交错数组\\Lesson4_交错数组.csproj",
         "packagesPath": "C:\\Users\\周建\\.nuget\\packages\\",
-        "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\obj\\",
+        "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson4_交错数组\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\周建\\AppData\\Roaming\\NuGet\\NuGet.Config",

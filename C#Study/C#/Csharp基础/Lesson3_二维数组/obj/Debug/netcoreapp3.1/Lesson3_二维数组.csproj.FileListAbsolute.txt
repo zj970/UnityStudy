@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.exe
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.deps.json
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.runtimeconfig.json
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.runtimeconfig.dev.json
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.dll
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\bin\Debug\netcoreapp3.1\Lesson3_二维数组.pdb
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.AssemblyInfo.cs
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.dll
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.pdb
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.genruntimeconfig.cache
+E:\UnityDate\C#Study\Csharp基础\Lesson3_二维数组\obj\Debug\netcoreapp3.1\Lesson3_二维数组.csproj.AssemblyReference.cache

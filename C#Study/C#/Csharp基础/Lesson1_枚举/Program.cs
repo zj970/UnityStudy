@@ -65,6 +65,7 @@ namespace Lesson1_枚举
         static void Main(string[] args)
         {
             Console.WriteLine("Lesson1_枚举");
+
             #region 知识点三 枚举的使用
             //声明枚举变量
             //自定义的枚举类型 变量名 = 默认值;(自定义的枚举类型.枚举项)
@@ -74,7 +75,7 @@ namespace Lesson1_枚举
             {
                 Console.WriteLine("主玩家逻辑");
             }
-            else if(playerType == E_PlayerType.Other)
+            else if (playerType == E_PlayerType.Other)
             {
                 Console.WriteLine("其它玩家逻辑");
             }

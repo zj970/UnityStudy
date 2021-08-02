@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj",
-      "projectName": "Lesson1_枚举",
-      "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\Lesson1_枚举.csproj",
+      "projectUniqueName": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson3_二维数组\\Lesson3_二维数组.csproj",
+      "projectName": "Lesson3_二维数组",
+      "projectPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson3_二维数组\\Lesson3_二维数组.csproj",
       "packagesPath": "C:\\Users\\周建\\.nuget\\packages\\",
-      "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson1_枚举\\obj\\",
+      "outputPath": "E:\\UnityDate\\C#Study\\C#\\Csharp基础\\Lesson3_二维数组\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\周建\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Lesson1_枚举/1.0.0": {
+      "Lesson3_二维数组/1.0.0": {
         "runtime": {
-          "Lesson1_枚举.dll": {}
+          "Lesson3_二维数组.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Lesson1_枚举/1.0.0": {
+    "Lesson3_二维数组/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
