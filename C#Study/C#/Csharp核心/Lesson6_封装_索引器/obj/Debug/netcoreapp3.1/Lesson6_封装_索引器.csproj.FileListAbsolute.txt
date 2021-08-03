@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp核心\Lesson6_封装_索引器\obj\Debug\netcorea
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson6_封装_索引器\obj\Debug\netcoreapp3.1\Lesson6_封装_索引器.dll
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson6_封装_索引器\obj\Debug\netcoreapp3.1\Lesson6_封装_索引器.pdb
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson6_封装_索引器\obj\Debug\netcoreapp3.1\Lesson6_封装_索引器.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson6_封装_索引器\obj\Debug\netcoreapp3.1\Lesson6_封装_索引器.csproj.AssemblyReference.cache
