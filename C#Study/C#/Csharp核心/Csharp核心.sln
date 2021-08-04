@@ -17,13 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson4_封装_构造函数
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson6_封装_索引器", "Lesson6_封装_索引器\Lesson6_封装_索引器.csproj", "{1F7BE5D2-24BE-4AF1-973A-0D79464F73DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_封装_静态成员", "Lesson7_封装_静态成员\Lesson7_封装_静态成员.csproj", "{31B0F30C-BCDA-468F-BDE7-749DB1ECF887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson7_封装_静态成员", "Lesson7_封装_静态成员\Lesson7_封装_静态成员.csproj", "{31B0F30C-BCDA-468F-BDE7-749DB1ECF887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson8_封装_静态类和静态构造函数", "Lesson8_封装_静态类和静态构造函数\Lesson8_封装_静态类和静态构造函数.csproj", "{0D8C3E41-058D-48EB-A770-EB10AE051EAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson8_封装_静态类和静态构造函数", "Lesson8_封装_静态类和静态构造函数\Lesson8_封装_静态类和静态构造函数.csproj", "{0D8C3E41-058D-48EB-A770-EB10AE051EAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9_封装_拓展方法", "Lesson9_封装_拓展方法\Lesson9_封装_拓展方法.csproj", "{BFE45D93-A7A0-4178-8307-75438E89B213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson9_封装_拓展方法", "Lesson9_封装_拓展方法\Lesson9_封装_拓展方法.csproj", "{BFE45D93-A7A0-4178-8307-75438E89B213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_封装_运算符重载", "Lesson10_封装_运算符重载\Lesson10_封装_运算符重载.csproj", "{7534E197-197A-45ED-AA32-A824E21EB118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson10_封装_运算符重载", "Lesson10_封装_运算符重载\Lesson10_封装_运算符重载.csproj", "{7534E197-197A-45ED-AA32-A824E21EB118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_封装_内部类和分部类", "Lesson11_封装_内部类和分部类\Lesson11_封装_内部类和分部类.csproj", "{7B5CB9FB-3C84-45EE-9E3C-09D0142D1296}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{7534E197-197A-45ED-AA32-A824E21EB118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7534E197-197A-45ED-AA32-A824E21EB118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7534E197-197A-45ED-AA32-A824E21EB118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5CB9FB-3C84-45EE-9E3C-09D0142D1296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5CB9FB-3C84-45EE-9E3C-09D0142D1296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5CB9FB-3C84-45EE-9E3C-09D0142D1296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5CB9FB-3C84-45EE-9E3C-09D0142D1296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
