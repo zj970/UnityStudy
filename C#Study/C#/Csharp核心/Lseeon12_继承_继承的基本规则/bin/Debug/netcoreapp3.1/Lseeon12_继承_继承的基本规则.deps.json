@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Lseeon12_继承_继承的基本规则/1.0.0": {
+        "runtime": {
+          "Lseeon12_继承_继承的基本规则.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lseeon12_继承_继承的基本规则/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
