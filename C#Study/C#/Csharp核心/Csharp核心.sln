@@ -37,6 +37,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson15_继承_万物之�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson16_继承_密封类", "Lesson16_继承_密封类\Lesson16_继承_密封类.csproj", "{B41D792F-FF89-4F3F-BA42-8BC01DB70E52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson17_多态_vob", "Lesson17_多态_vob\Lesson17_多态_vob.csproj", "{06058BC0-4B6D-4537-8F89-B4A9623722E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lseeon18_多态_抽象类和抽象函数", "Lseeon18_多态_抽象类和抽象函数\Lseeon18_多态_抽象类和抽象函数.csproj", "{3441C583-7254-438C-95F6-1EAF50B73037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson19_多态_接口", "Lesson19_多态_接口\Lesson19_多态_接口.csproj", "{5F4EA8F5-AD91-48F5-A0F0-A215B7EC8EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson20_多态_密封方法", "lesson20_多态_密封方法\lesson20_多态_密封方法.csproj", "{F6BC3037-01D4-48EC-91CF-EE3730EABB5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +119,22 @@ Global
 		{B41D792F-FF89-4F3F-BA42-8BC01DB70E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B41D792F-FF89-4F3F-BA42-8BC01DB70E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B41D792F-FF89-4F3F-BA42-8BC01DB70E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06058BC0-4B6D-4537-8F89-B4A9623722E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06058BC0-4B6D-4537-8F89-B4A9623722E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06058BC0-4B6D-4537-8F89-B4A9623722E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06058BC0-4B6D-4537-8F89-B4A9623722E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3441C583-7254-438C-95F6-1EAF50B73037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3441C583-7254-438C-95F6-1EAF50B73037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3441C583-7254-438C-95F6-1EAF50B73037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3441C583-7254-438C-95F6-1EAF50B73037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4EA8F5-AD91-48F5-A0F0-A215B7EC8EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4EA8F5-AD91-48F5-A0F0-A215B7EC8EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4EA8F5-AD91-48F5-A0F0-A215B7EC8EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4EA8F5-AD91-48F5-A0F0-A215B7EC8EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BC3037-01D4-48EC-91CF-EE3730EABB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BC3037-01D4-48EC-91CF-EE3730EABB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BC3037-01D4-48EC-91CF-EE3730EABB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BC3037-01D4-48EC-91CF-EE3730EABB5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

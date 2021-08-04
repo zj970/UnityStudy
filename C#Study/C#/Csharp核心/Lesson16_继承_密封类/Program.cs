@@ -35,7 +35,7 @@ namespace Lesson16_继承_密封类
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          
         }
     }
 }
