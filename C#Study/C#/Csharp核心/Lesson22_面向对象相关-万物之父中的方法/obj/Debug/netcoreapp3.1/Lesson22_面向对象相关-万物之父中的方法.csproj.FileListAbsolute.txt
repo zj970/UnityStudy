@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.exe
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.deps.json
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.dll
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\bin\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.pdb
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.dll
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.pdb
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson22_面向对象相关-万物之父中的方法\obj\Debug\netcoreapp3.1\Lesson22_面向对象相关-万物之父中的方法.csproj.AssemblyReference.cache
