@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_LinkedList", "Less
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_泛型栈和队列", "Lesson11_泛型栈和队列\Lesson11_泛型栈和队列.csproj", "{536D6223-5756-4B5B-B021-373664A20E85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson12_委托", "lesson12_委托\lesson12_委托.csproj", "{018CCCB8-03C2-4F68-9F32-969EE11F9360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13_事件", "Lesson13_事件\Lesson13_事件.csproj", "{477A8D54-531A-43B7-AD7F-6C65CFF520AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{536D6223-5756-4B5B-B021-373664A20E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536D6223-5756-4B5B-B021-373664A20E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536D6223-5756-4B5B-B021-373664A20E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018CCCB8-03C2-4F68-9F32-969EE11F9360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018CCCB8-03C2-4F68-9F32-969EE11F9360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018CCCB8-03C2-4F68-9F32-969EE11F9360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018CCCB8-03C2-4F68-9F32-969EE11F9360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477A8D54-531A-43B7-AD7F-6C65CFF520AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477A8D54-531A-43B7-AD7F-6C65CFF520AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477A8D54-531A-43B7-AD7F-6C65CFF520AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477A8D54-531A-43B7-AD7F-6C65CFF520AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

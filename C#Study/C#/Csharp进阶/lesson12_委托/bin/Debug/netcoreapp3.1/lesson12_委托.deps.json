@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "lesson12_委托/1.0.0": {
+        "runtime": {
+          "lesson12_委托.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson12_委托/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
