@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\bin\Debug\netcoreapp3.1\Lesson1_ArrayList.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson1_ArrayList\obj\Debug\netcoreapp3.1\Lesson1_ArrayList.genruntimeconfig.cache

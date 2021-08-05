@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesson3_Queue.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.genruntimeconfig.cache
