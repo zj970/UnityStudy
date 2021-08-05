@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_Stack", "Lesson2_St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson3_Queue", "lesson3_Queue\lesson3_Queue.csproj", "{FCC33798-A610-44BA-9B0B-ED8271554D17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4_Hashtable", "Lesson4_Hashtable\Lesson4_Hashtable.csproj", "{74C11B79-561A-4231-8FBD-439C91FDF679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5_泛型", "Lesson5_泛型\Lesson5_泛型.csproj", "{40A9EDAF-3DA0-4912-A3D8-CE2CADD2C9B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{FCC33798-A610-44BA-9B0B-ED8271554D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC33798-A610-44BA-9B0B-ED8271554D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC33798-A610-44BA-9B0B-ED8271554D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C11B79-561A-4231-8FBD-439C91FDF679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C11B79-561A-4231-8FBD-439C91FDF679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C11B79-561A-4231-8FBD-439C91FDF679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C11B79-561A-4231-8FBD-439C91FDF679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A9EDAF-3DA0-4912-A3D8-CE2CADD2C9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A9EDAF-3DA0-4912-A3D8-CE2CADD2C9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A9EDAF-3DA0-4912-A3D8-CE2CADD2C9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A9EDAF-3DA0-4912-A3D8-CE2CADD2C9B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

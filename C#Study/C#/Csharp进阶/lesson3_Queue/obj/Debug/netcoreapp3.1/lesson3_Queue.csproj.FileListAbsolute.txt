@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\bin\Debug\netcoreapp3.1\lesso
 E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.dll
 E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.pdb
 E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\lesson3_Queue\obj\Debug\netcoreapp3.1\lesson3_Queue.csproj.AssemblyReference.cache

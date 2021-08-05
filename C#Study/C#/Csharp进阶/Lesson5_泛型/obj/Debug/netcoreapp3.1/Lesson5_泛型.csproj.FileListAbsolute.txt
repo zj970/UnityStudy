@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\bin\Debug\netcoreapp3.1\Lesson5_泛型.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson5_泛型\obj\Debug\netcoreapp3.1\Lesson5_泛型.genruntimeconfig.cache
