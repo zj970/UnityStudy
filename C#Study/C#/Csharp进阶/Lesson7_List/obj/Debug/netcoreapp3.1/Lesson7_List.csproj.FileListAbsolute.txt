@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\bin\Debug\netcoreapp3.1\Lesson7_List.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson7_List\obj\Debug\netcoreapp3.1\Lesson7_List.genruntimeconfig.cache

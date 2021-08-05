@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\bin\Debug\netcoreapp3.1\Lesson8_Dictionary.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson8_Dictionary\obj\Debug\netcoreapp3.1\Lesson8_Dictionary.genruntimeconfig.cache
