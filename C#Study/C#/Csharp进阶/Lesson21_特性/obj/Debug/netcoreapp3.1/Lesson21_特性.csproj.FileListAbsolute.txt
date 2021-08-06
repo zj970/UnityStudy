@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\bin\Debug\netcoreapp3.1\Lesson21_特性.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson21_特性\obj\Debug\netcoreapp3.1\Lesson21_特性.genruntimeconfig.cache

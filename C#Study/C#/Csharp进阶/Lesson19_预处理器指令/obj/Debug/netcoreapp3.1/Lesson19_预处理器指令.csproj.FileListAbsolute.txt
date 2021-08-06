@@ -1,0 +1,12 @@
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.exe
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.deps.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\bin\Debug\netcoreapp3.1\Lesson19_预处理器指令.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.dll
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.pdb
+E:\UnityDate\C#Study\C#\Csharp进阶\Lesson19_预处理器指令\obj\Debug\netcoreapp3.1\Lesson19_预处理器指令.genruntimeconfig.cache
