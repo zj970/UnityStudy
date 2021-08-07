@@ -1,0 +1,4 @@
+E:\UnityDate\C#Study\C#\Csharp基础\obj\Debug\netcoreapp3.1\Csharp基础.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp基础\obj\Debug\netcoreapp3.1\Csharp基础.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp基础\obj\Debug\netcoreapp3.1\Csharp基础.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp基础\obj\Debug\netcoreapp3.1\Csharp基础.csproj.CoreCompileInputs.cache
