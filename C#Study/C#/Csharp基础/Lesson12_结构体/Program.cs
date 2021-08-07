@@ -78,8 +78,11 @@ namespace Lesson12_结构体
             s1.Speak();
             s2.Speak();
             #endregion
-
-
+            Console.WriteLine("请输入玩家姓名：");
+            Player player = new Player(Convert.ToString(Console.ReadLine()));
+            Console.WriteLine("请选择你的职业（0.战士，1.猎人，2.法师）：");
+            Player.Profession selectProfession = (Player.Profession)int.Parse(Console.ReadLine());
+            player.Speak(selectProfession);
             #region 知识点五 访问修饰符
             //修饰结构体中变量和方法 是否能被外部使用
             //public 公开的 可以被外部访问
