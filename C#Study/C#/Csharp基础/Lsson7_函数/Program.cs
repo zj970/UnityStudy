@@ -78,14 +78,14 @@ namespace Lsson7_函数
         static int[] Calc(int a, int b)
         {
             //如果用数组作为返回值出去 要知道数组的大小
-            return new int[] { a + b,(a + b) / 2 };
+            return new int[] { a + b, (a + b) / 2 };
         }
 
         #endregion
 
         #region 知识点五 关于return
-       //即使函数没有返回值，我们也可以使用return;
-       //return 可以直接不执行之后的代码，直接返回函数外部
+        //即使函数没有返回值，我们也可以使用return;
+        //return 可以直接不执行之后的代码，直接返回函数外部
         #endregion
 
         //总结
@@ -104,14 +104,14 @@ namespace Lsson7_函数
             SayYourName(WhatYourName());//断点测试 F11一步一步执行代码
             Console.WriteLine("3+5结果是" + Sum(3, 5));
 
-            int[] arr = Calc(5,7);
+            int[] arr = Calc(5, 7);
             Console.WriteLine(arr[0] + " " + arr[1]);
 
             for (int i = 0; i < 99; i++)
             {
                 for (int j = 0; j < 11; j++)
                 {
-                    if (i == 8 || j ==8)
+                    if (i == 8 || j == 8)
                     {
                         Console.WriteLine("test");
                         break;
@@ -123,50 +123,28 @@ namespace Lsson7_函数
             Console.WriteLine("test-----------------------------------------------");
 
             int[] a = { 1, 2, 3, 4, 5, 6, 7 };
-            Console.WriteLine("数组的总和为：{0}\n最大值为:{1}\n最小值为:{2}\n平均值为:{3}",Compute(a)[0], Compute(a)[1], Compute(a)[2], Compute(a)[3]);
-        }
-        const float PI = 3.1415926f;
-
-        /// <summary>
-        /// 比较两个数字的大小，返回最大值
-        /// </summary>
-        /// <param name="a">浮点数</param>
-        /// <param name="b">浮点数</param>
-        /// <returns></returns>
-        static float Compare(float a, float b)
-        {
-            return a > b ? a : b;
-        }
-
-        /// <summary>
-        /// 返回浮点数组，第一位是圆的面积。第二位是圆的周长
-        /// </summary>
-        /// <param name="r">圆的半径</param>
-        /// <returns></returns>
-        static float[] Compute(float r)
-        {
-            return new float[] {PI*r*r,2*r*PI};
-        } 
-
-        /// <summary>
-        /// 计算数组的总和，最大值，最小值，平均值，并返回
-        /// </summary>
-        /// <param name="array">传入数组</param>
-        /// <returns></returns>
-        static float[] Compute(int[] array)
-        {
-            int sum = 0;
-            float avg = 0;
-            int min = array[1];
-            int max = array[1];
-            for (int i = 0; i < array.Length; i++)
+            Exercises exercises = new Exercises();
+            Console.WriteLine("数组的总和为：{0}\n最大值为:{1}\n最小值为:{2}\n平均值为:{3}", exercises.Compute(a)[0], exercises.Compute(a)[1], exercises.Compute(a)[2], exercises.Compute(a)[3]);
+            Console.WriteLine("请输入一个数：");
+            if (Exercises.IsPrime(Convert.ToInt32(Console.ReadLine())))
             {
-                sum += array[i];
-                max = max < array[i] ? array[i] : max;
-                min = min < array[i] ? min : array[i];
+                Console.WriteLine("是质数");
             }
-            avg = sum / array.Length;
-            return new float[] { sum, max, min, avg };
+            else
+            {
+                Console.WriteLine("不是质数");
+            }
+            Console.WriteLine("请输入一个数：");
+            if (Exercises.IsLeapYear(int.Parse(Console.ReadLine())))
+            {
+                Console.WriteLine("是闰年");
+            }
+            else
+            {
+                Console.WriteLine("不是闰年");
+            }
+
         }
+
     }
 }
