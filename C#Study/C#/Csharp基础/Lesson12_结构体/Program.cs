@@ -33,19 +33,22 @@ namespace Lesson12_结构体
         //在结构体中声明的变量不能初始化
         //变量类型 可以写任意类型 包括结构体 但是 不能是自己的结构体
         //变量
-        public  int age;
-        public bool sex;
-        public int number;
-        public string name;
+        private string name;
+        private bool sex;
+        private int age;
+        private string grade;
+        private string specialty;
+
 
         //构造函数
-        public Student(int age,bool sex,int number,string name)
+        public Student(string name,bool sex,int age,string grade,string specialty)
         {
             //关键字
-            this.age = age;
-            this.sex = sex;
-            this.number = number;
             this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.grade = grade;
+            this.specialty = specialty;
         }
         //函数方法
         //表现这个数据结构的行为
@@ -54,7 +57,8 @@ namespace Lesson12_结构体
         public  void Speak()
         {
             //函数中可以直接使用结构体内部声明的变量
-            Console.WriteLine("我的名字是{0},我今年{1}岁", name, age);
+            Console.WriteLine("我是{0},我今年{1}岁，我是{2}{3}专业的{4}孩子", name, age, grade, specialty, sex ? "女":"男") ;
+           
         }
         //可以根据需求可以写无数个
     }
@@ -69,12 +73,10 @@ namespace Lesson12_结构体
             Console.WriteLine("Lesson12_结构体");
             #region 知识点四 结构体的使用
             //结构体类型 变量名;
-            Student s1;
-            s1.age = 18;
-            s1.name = "周健";
-            s1.number = 18060;
-            s1.sex = false;
+            Student s1 = new Student("小红",true,18,"2021级","电子信息工程"); 
+            Student s2 = new Student("小王",false,23,"2015级","电子信息工程");
             s1.Speak();
+            s2.Speak();
             #endregion
 
 
@@ -94,9 +96,6 @@ namespace Lesson12_结构体
 
             //构造函数 一般是用于在外部方便初始化的
             #endregion
-
-            Student s2 = new Student(18, true,  18949, "小红");
-            s2.Speak();
 
             //总结
             //1.概念：结构体 struct 是变量和函数的集合 用来表示特定的数据集合

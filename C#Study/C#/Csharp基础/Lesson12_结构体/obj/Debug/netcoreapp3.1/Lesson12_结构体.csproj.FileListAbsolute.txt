@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp基础\Lesson12_结构体\obj\Debug\netcoreapp3.1\
 E:\UnityDate\C#Study\C#\Csharp基础\Lesson12_结构体\obj\Debug\netcoreapp3.1\Lesson12_结构体.dll
 E:\UnityDate\C#Study\C#\Csharp基础\Lesson12_结构体\obj\Debug\netcoreapp3.1\Lesson12_结构体.pdb
 E:\UnityDate\C#Study\C#\Csharp基础\Lesson12_结构体\obj\Debug\netcoreapp3.1\Lesson12_结构体.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp基础\Lesson12_结构体\obj\Debug\netcoreapp3.1\Lesson12_结构体.csproj.AssemblyReference.cache
