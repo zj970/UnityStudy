@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp核心\Lesson5_成员属性\obj\Debug\netcoreapp3.
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson5_成员属性\obj\Debug\netcoreapp3.1\Lesson5_成员属性.dll
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson5_成员属性\obj\Debug\netcoreapp3.1\Lesson5_成员属性.pdb
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson5_成员属性\obj\Debug\netcoreapp3.1\Lesson5_成员属性.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson5_成员属性\obj\Debug\netcoreapp3.1\Lesson5_成员属性.csproj.AssemblyReference.cache

@@ -109,6 +109,31 @@ namespace Lesson3_封装_成员方法
             }
             #endregion
 
+            Console.WriteLine("**********************");
+            Ticket ticket = new Ticket(250);
+            ticket.GetPrice();
+            ticket.PriceShow();
+            ticket.Distance = -5;
+            ticket.GetPrice();
+            ticket.PriceShow();
+            Console.WriteLine("**********************");
+            Grade g1 = new Grade();
+            g1.gradeNumber = 1001;
+            g1.grade = "2015级";
+            g1.specialty = "电子信息工程";
+            //g1.AddGrade(g1);
+            Grade g2 = new Grade();
+            g2.gradeNumber = 1002;
+            g2.grade = "2016级";
+            g2.specialty = "电子信息工程";
+            g1.AddGrade(g2);
+            Grade g3 = new Grade();
+            g3.gradeNumber = 1003;
+            g3.grade = "2017级";
+            g3.specialty = "电子信息工程";
+            g1.AddGrade(g3);
+            Console.WriteLine(g1.grades.Length);
+            g1.GradeShow();
             //总结
             //成员方法
             //描述方法
