@@ -135,8 +135,31 @@ namespace Lesson5_成员属性
 
             p.Name = "周健";
             Console.WriteLine(p.Name);
-            p.Money =Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                p.Money = Convert.ToInt32(Console.ReadLine());
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("输入不规范");
+                Console.WriteLine(e);
+            }    
+           
             Console.WriteLine(p.Money);
+
+            Student student1 = new Student("小明",false);
+            student1.Age = 18;
+            student1.CScore = 99;
+            student1.UScore = 101;
+            Student student2 = new Student("小蓝", true);
+            student2.Age = 151;
+            student2.CScore = 101;
+            student2.UScore = 100;
+
+            Console.WriteLine("************************************************");
+            student1.Introduce();
+            student2.Introduce();
+
             #endregion
 
             //总结
