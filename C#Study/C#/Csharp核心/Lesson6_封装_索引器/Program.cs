@@ -44,7 +44,7 @@ namespace Lesson6_封装_索引器
     class Person
     {
         private string name;
-        private int age;
+        public int age;
         private Person[] friends;
 
         private int[,] array = new int[2,3];
@@ -130,7 +130,18 @@ namespace Lesson6_封装_索引器
             Console.WriteLine(p[0]);
 
             p[0, 0] = 10;
-            Console.WriteLine(p[0,0]);
+            Console.WriteLine(p[0, 0]);
+
+            Integer intArray = new Integer();
+            intArray[0] = new Integer();
+            intArray[1] = new Integer();
+            intArray[2] = new Integer();
+            intArray[3] = new Integer();
+            intArray[4] = new Integer();
+
+            Console.WriteLine(intArray[0].target);
+            Console.WriteLine(intArray[1].target);
+
             #endregion
 
 
