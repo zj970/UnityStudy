@@ -128,6 +128,9 @@ namespace Lesson8_封装_静态类和静态构造函数
             singleton.name = "cccccc";
             Singleton singleton1 = Singleton.GetInstance("嘻嘻嘻", 18);//实例化失败
             Console.WriteLine(singleton1.name+singleton.name);
+            Console.WriteLine("圆的面积为"+Calculate.CircleArea(3));
+            Console.WriteLine("-1的绝对值为：" + Calculate.AbsoluteValue(-1));
+            Console.WriteLine("半径为3圆的周长为: " + Calculate.CirclePerimeter(3));
 
             //总结
             //静态类
