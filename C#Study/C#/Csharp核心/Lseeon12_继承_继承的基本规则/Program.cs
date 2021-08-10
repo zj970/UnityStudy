@@ -97,6 +97,12 @@ namespace Lseeon12_继承_继承的基本规则
             ct.subject = "语文";
             ct.SpeakSubjec();
             ct.skill();
+
+            Warrior p = new Warrior();
+            p.Age = 18;
+            p.name = "sdfghj";
+            p.Speak();
+            p.Atk();
         }
         //总结
         //继承基本语法
