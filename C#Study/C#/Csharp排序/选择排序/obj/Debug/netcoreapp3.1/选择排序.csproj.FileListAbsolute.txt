@@ -1,0 +1,13 @@
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.exe
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.deps.json
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.runtimeconfig.json
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.runtimeconfig.dev.json
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.dll
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\bin\Debug\netcoreapp3.1\选择排序.pdb
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.csproj.AssemblyReference.cache
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.AssemblyInfoInputs.cache
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.AssemblyInfo.cs
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.csproj.CoreCompileInputs.cache
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.dll
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.pdb
+E:\UnityDate\C#Study\C#\Csharp排序\选择排序\obj\Debug\netcoreapp3.1\选择排序.genruntimeconfig.cache

@@ -33,13 +33,42 @@ namespace Lesson13_继承_里氏替换原则
         {
             Console.WriteLine("怪物攻击");
         }
+
+        Random random = new Random();
+
+        public Monster[] Instantiation(Monster[] monsters,int num)
+        {
+            int j = 0;
+            for (int i = 0; i < num; i++)
+            {
+                if(random.Next(0,5) > 2)
+                {
+                    monsters[j++] = new Boss();
+
+                }
+                else
+                {
+                    monsters[j++] = new Goblin();
+                }
+
+            }
+            return monsters;
+        }      
     }
 
-    class Boss : GameObject
+    class Boss : Monster
     {
         public void BossAtk()
         {
             Console.WriteLine("Boss攻击");
+        }
+    }
+
+    class Goblin : Monster
+    {
+        public void GoblinAtk()
+        {
+            Console.WriteLine("普通攻击");
         }
     }
     #endregion
@@ -48,20 +77,35 @@ namespace Lesson13_继承_里氏替换原则
         static void Main(string[] args)
         {
             //里氏替换原则 用父类容器 装载子类对象
+
             GameObject player = new Player();
             GameObject monster = new Monster();
             GameObject boss = new Boss();
 
             GameObject[] objects = new GameObject[] { new Player(), new Monster(), new Boss() };
+            Monster monster1 = new Monster();
+            Monster[] monsters2 = new Monster[10];
+            monsters2 = monster1.Instantiation(monsters2, 10);
+            for (int i = 0; i < monsters2.Length; i++)
+            {
+              
+                if ((monsters2[i] is Goblin))
+                {
+                    (monsters2[i] as Goblin).GoblinAtk();
+                }
+                else if (monsters2[i] is Boss)
+                {
+                    (monsters2[i] as Boss).BossAtk();
+                }
+            }
 
-            
 
             #region 知识点三 is和as
             //基本概念
             //is：判断一个对象是否是指定类对象
             //返回值 ：bool 是真，不是为假
 
-            if(player is Player)
+            if (player is Player)
             {
                 Console.WriteLine("player 是 Player类型的对象");
                 Player p = player as Player;
