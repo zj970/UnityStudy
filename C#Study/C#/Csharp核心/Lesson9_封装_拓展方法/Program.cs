@@ -45,6 +45,8 @@ namespace Lesson9_封装_拓展方法
         {
             Console.WriteLine("拓展方法");
         }
+        public static float SquareInt(this int value) => value * value;
+        public static void Suicide(this Player player) => player = null;
     }
     #endregion
 
@@ -80,6 +82,15 @@ namespace Lesson9_封装_拓展方法
 
             Test t = new Test();
             t.Fun3();
+
+            Player player = new Player("周健");
+            player.Atk();
+            player.Move();
+            player.Hurt();
+            player.Hurt();
+            player.Hurt();
+            player.Hurt();
+            player.Suicide();
             #endregion
 
             //总结

@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp核心\Lesson9_封装_拓展方法\obj\Debug\netco
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson9_封装_拓展方法\obj\Debug\netcoreapp3.1\Lesson9_封装_拓展方法.dll
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson9_封装_拓展方法\obj\Debug\netcoreapp3.1\Lesson9_封装_拓展方法.pdb
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson9_封装_拓展方法\obj\Debug\netcoreapp3.1\Lesson9_封装_拓展方法.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson9_封装_拓展方法\obj\Debug\netcoreapp3.1\Lesson9_封装_拓展方法.csproj.AssemblyReference.cache
