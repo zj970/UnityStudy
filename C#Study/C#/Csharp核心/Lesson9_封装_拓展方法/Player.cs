@@ -23,6 +23,7 @@ namespace Lesson9_封装_拓展方法
         public Position playerPos;
         Random random = new Random();
 
+
         public Player(string name, float bloodVolume = 100f, float attack = 50f, float defense = 20f)
         {
             this.name = name;

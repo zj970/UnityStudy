@@ -102,7 +102,8 @@ namespace Lesson10_封装_运算符重载
         public static bool operator <(Point p1, Point p2)
         {
             return true;
-        }
+        } 
+      
         #endregion
 
         #endregion
@@ -140,6 +141,24 @@ namespace Lesson10_封装_运算符重载
             int a = 8;
             Point p3 = p1 + a;
             Console.WriteLine(p3.x + "\t" + p3.y);
+
+            Vector2 vector1 = new Vector2();
+            vector1.x = 10;
+            vector1.y = 10;
+            Vector2 vector2 = new Vector2();
+            vector2.x = 10;
+            vector2.y = 10;
+            Vector2 vector3 = new Vector2();
+            vector3.x = 10;
+            vector3.y = -10;
+            if (vector1==vector2)
+            {
+                Console.WriteLine("两个值相等");
+            }
+            if (vector2!=vector3)
+            {
+                Console.WriteLine("两个值不相等");
+            }
 
             #endregion
 
