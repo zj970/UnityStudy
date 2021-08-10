@@ -133,12 +133,14 @@ namespace Lesson6_封装_索引器
             Console.WriteLine(p[0, 0]);
 
             Integer intArray = new Integer();
+            intArray.target = 10;
             intArray[0] = new Integer();
             intArray[1] = new Integer();
             intArray[2] = new Integer();
             intArray[3] = new Integer();
             intArray[4] = new Integer();
-
+            intArray[0].target = 15;
+            intArray[1].target = 20;
             Console.WriteLine(intArray[0].target);
             Console.WriteLine(intArray[1].target);
 

@@ -7,8 +7,8 @@ namespace Lesson6_封装_索引器
     class Integer
     {
         public int target;
-
         private Integer[] integers;
+
 
         public Integer this[int index]
         {

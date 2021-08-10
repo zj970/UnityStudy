@@ -10,3 +10,4 @@ E:\UnityDate\C#Study\C#\Csharp核心\Lesson8_封装_静态类和静态构造函�
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson8_封装_静态类和静态构造函数\obj\Debug\netcoreapp3.1\Lesson8_封装_静态类和静态构造函数.dll
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson8_封装_静态类和静态构造函数\obj\Debug\netcoreapp3.1\Lesson8_封装_静态类和静态构造函数.pdb
 E:\UnityDate\C#Study\C#\Csharp核心\Lesson8_封装_静态类和静态构造函数\obj\Debug\netcoreapp3.1\Lesson8_封装_静态类和静态构造函数.genruntimeconfig.cache
+E:\UnityDate\C#Study\C#\Csharp核心\Lesson8_封装_静态类和静态构造函数\obj\Debug\netcoreapp3.1\Lesson8_封装_静态类和静态构造函数.csproj.AssemblyReference.cache

@@ -52,10 +52,9 @@ namespace Lesson8_封装_静态类和静态构造函数
     public static class TestStatic
     {
         public static int testIndex = 0;
-
         public static void TestFun()
         {
-
+            Console.WriteLine("-----------------");
         }
 
         public static int TestIndex 
@@ -122,6 +121,13 @@ namespace Lesson8_封装_静态类和静态构造函数
             Console.WriteLine(Test.test);
             Test t = new Test();
             Test t1 = new Test();
+            TestStatic.TestFun();
+
+            Singleton singleton = Singleton.GetInstance("周建",18);
+            Console.WriteLine(singleton.name);
+            singleton.name = "cccccc";
+            Singleton singleton1 = Singleton.GetInstance("嘻嘻嘻", 18);//实例化失败
+            Console.WriteLine(singleton1.name+singleton.name);
 
             //总结
             //静态类
