@@ -18,11 +18,53 @@ namespace Lesson13_继承_里氏替换原则
 
     }
 
-    class Player : GameObject
+    class Player : GameObject,IEquip
     {
+        public Weapon weapons = new Weapon("小刀");
         public void PlayerAtk()
         {
             Console.WriteLine("玩家攻击");
+        }
+
+        public void Weaponly(int i = 0)
+        {
+            weapons = weapons.Weaponly(i);
+        }
+    }
+
+    /// <summary>
+    /// 装备武器接口
+    /// </summary>
+    interface IEquip
+    {
+        public void Weaponly(int i);
+    }
+
+
+    class Weapon 
+    {
+        protected Weapon dagger;//匕首
+        protected Weapon handgun;//手枪
+        protected Weapon shotgun;//散弹枪
+        protected Weapon submachineGun;//冲锋枪
+        public string name;
+
+        public Weapon(string name)
+        {
+            this.name = name;
+        }
+
+        public Weapon Weaponly(int i = 0)
+        {
+            
+            switch (i)
+            {
+                case 0:return dagger = new Weapon("小刀");
+                case 1:return handgun = new Weapon("手枪");
+                case 2:return shotgun = new Weapon("散弹枪");
+                case 4:return submachineGun = new Weapon("冲锋枪");
+                default:return dagger = new Weapon("小刀");
+            }
         }
 
     }
@@ -98,6 +140,14 @@ namespace Lesson13_继承_里氏替换原则
                     (monsters2[i] as Boss).BossAtk();
                 }
             }
+
+            Player player1 = new Player();
+            player1.Weaponly();
+            Console.WriteLine(player1.weapons.name);
+            player1.Weaponly(1);
+            Console.WriteLine(player1.weapons.name);
+            player1.Weaponly(2);
+            Console.WriteLine(player1.weapons.name);
 
 
             #region 知识点三 is和as
