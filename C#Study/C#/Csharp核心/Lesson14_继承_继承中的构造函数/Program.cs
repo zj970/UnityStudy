@@ -122,6 +122,17 @@ namespace Lesson14_继承_继承中的构造函数
             MainPlayer mp = new MainPlayer();
 
             Son s = new Son(1, "dd");
+            Worker worker = new Programmer();
+            if (worker is Programmer)
+            {
+                (worker as Programmer).WorkWay();
+            }
+
+            Art art = new Art();
+            art.WorkWay();
+            Planner planner = new Planner();
+            planner.WorkWay();
+            
         }
     }
     //总结
