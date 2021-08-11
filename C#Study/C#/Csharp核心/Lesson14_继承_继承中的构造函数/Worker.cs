@@ -15,11 +15,13 @@ namespace Lesson14_继承_继承中的构造函数
 
     class Programmer : Worker
     {
-        
+        public Programmer(string name = "程序员", string workContent = "写程序" )
+        {
+            this.name = name;
+            this.workContent = workContent;
+        }
         public override void WorkWay()
         {
-            name = "程序员";
-            workContent = "写程序";
             Console.WriteLine($"我是{name}，我的工作内容是 : {workContent}");
         }
     }
