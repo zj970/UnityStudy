@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5530750617247762519}
   - component: {fileID: 5530750617247762513}
   - component: {fileID: 5530750617247762518}
+  - component: {fileID: 114904769498558424}
   m_Layer: 5
   m_Name: BlueParticle
   m_TagString: Untagged
@@ -4698,3 +4699,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &114904769498558424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530750617247762516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ebb0b99ae4b7046a558410fd26c039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

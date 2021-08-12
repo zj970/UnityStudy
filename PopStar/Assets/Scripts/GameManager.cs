@@ -7,23 +7,27 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] starObjects;
-    public int maxRow = 10;//行
-    public int maxColemn = 12;//列
+    public int maxRow = 12;//行
+    public int maxColumn = 10;//列
     public GameObject starGroup;//所有星星的父物体
+    public GameObject PalyGame;
+    public Image image;
+    public Image haoheng;
+
 
     //音效
     public AudioSource clearSource;
     public AudioSource backgroundMusic;
 
     //特效
-    public ParticleSystem[] particles;
-    public float desTime = 1.5f;
+    public GameObject[] particles;
+
 
 
     /// <summary>
     /// 所有星星的集合
     /// </summary>
-    public List<Star> starList;
+    public List<Star> StarList;
     /// <summary>
     /// 满足条件的星星集合
     /// </summary>
@@ -51,7 +55,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameManager_Instance = this;
-
         GameStart(1);
     }
 
@@ -65,13 +68,16 @@ public class GameManager : MonoBehaviour
             backgroundMusic.Play();
         }
         rePlay.gameObject.SetActive(false);//禁用
+        image.gameObject.SetActive(false);
 
         HurdleIndex = hurdle;
-        currentTotalScore = 0;
+        //currentTotalScore = 0;//可以计算
         currentScore = 0;
 
         SetHurdleTargetScore(HurdleIndex);
         CreatStarList();
+
+        judgeSwitch = 0;
 
     }
 
@@ -80,7 +86,7 @@ public class GameManager : MonoBehaviour
         //生成row*column个星星
         for (int r = 0; r < maxRow; r++)
         {
-            for (int c = 0; c < maxColemn; c++)
+            for (int c = 0; c < maxColumn; c++)
             {
                 //实例化星星
                 int index = Random.Range(0, 5);//0 blue,1 Green,2 Orange,3 Purple,4 Red
@@ -91,7 +97,7 @@ public class GameManager : MonoBehaviour
                 var star = obj.GetComponent<Star>();
                 star.Row = r;
                 star.Column = c;       
-                starList.Add(star);
+                StarList.Add(star);
             }
         }
     }
@@ -105,9 +111,9 @@ public class GameManager : MonoBehaviour
         int row = currentStar.Row;
         int column = currentStar.Column;
         //Up row+1,column
-        if (row<=maxRow)
+        if (row<maxRow)
         {
-            foreach (var item in starList)
+            foreach (var item in StarList)
             {
                 if (item.Row == row + 1 && item.Column == column)
                 {
@@ -124,9 +130,9 @@ public class GameManager : MonoBehaviour
             }
         }
         //down row-1,column
-        if (row >=0)
+        if (row >0)
         {
-            foreach (var item in starList)
+            foreach (var item in StarList)
             {
                 if (item.Row == row - 1 && item.Column == column)
                 {
@@ -143,9 +149,9 @@ public class GameManager : MonoBehaviour
             }
         }
         //left row,column-1
-        if (column>=0)
+        if (column>0)
         {
-            foreach (var item in starList)
+            foreach (var item in StarList)
             {
                 if (item.Row == row && item.Column == column -1)
                 {
@@ -161,9 +167,9 @@ public class GameManager : MonoBehaviour
             }
         }
         //Right row,column+1
-        if (column <= maxColemn)
+        if (column < maxColumn)
         {
-            foreach (var item in starList)
+            foreach (var item in StarList)
             {
                 if (item.Row == row  && item.Column == column + 1)
                 {
@@ -196,18 +202,18 @@ public class GameManager : MonoBehaviour
                 int colorIndex = (int)item.starColor;
                 if (particles.Length>=colorIndex)
                 {
-                    ParticleSystem parObj = particles[colorIndex];
+                    GameObject parObj = particles[colorIndex];
                     var obj = Instantiate(parObj, starGroup.transform);
                     obj.transform.localPosition = item.transform.localPosition;
 
-                    Destroy(obj,desTime);
+                    //Destroy(obj,desTime);
                 }
 
                 item.DestroyStar();
-                starList.Remove(item);
+                StarList.Remove(item);
             }
             //向下移动
-            foreach (var restStar in starList)
+            foreach (var restStar in StarList)
             {
                 int moveCount = 0;
                 //计算需要向下移动的行数
@@ -228,10 +234,10 @@ public class GameManager : MonoBehaviour
 
 
             //向左移动
-            for (int col = maxColemn-2; col >= 0; col--)//按列遍历
+            for (int col = maxColumn-2; col >= 0; col--)//按列遍历
             {
                 bool isEmpty = true;
-                foreach (var restStar in starList)//判断列是否为空
+                foreach (var restStar in StarList)//判断列是否为空
                 {
                     if (restStar.Column == col)
                     {
@@ -240,7 +246,7 @@ public class GameManager : MonoBehaviour
                 }
                 if (isEmpty)
                 {
-                    foreach (var restStar in starList)//计算左移的列数
+                    foreach (var restStar in StarList)//计算左移的列数
                     {
                         //位于空列的右边
                         if (restStar.Column>col)
@@ -251,7 +257,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            foreach (var restStar in starList)//找到moveLeftCount>0的星星，打开开关
+            foreach (var restStar in StarList)//找到moveLeftCount>0的星星，打开开关
             {
                 if (restStar.moveLeftCount>=1)
                 {
@@ -276,7 +282,7 @@ public class GameManager : MonoBehaviour
     public void JudgeHurdleOver()
     {
         bool isOver = true;
-        foreach (var restStaar in starList)
+        foreach (var restStaar in StarList)
         {
             FindTheSameStar(restStaar);
             if (ClickedStarList.Count > 0)
@@ -291,12 +297,12 @@ public class GameManager : MonoBehaviour
             {
                 judgeSwitch = 1;
                 //Hurdle Over
-                RestStarRewardScore(starList.Count);
-                foreach (var restStar in starList)
+                RestStarRewardScore(StarList.Count);
+                foreach (var restStar in StarList)
                 {
                     restStar.DestroyStar();
                 }
-                starList.Clear();
+                StarList.Clear();
                 //Debug.Log("游戏结束");
                 //判断总得分是否超过目标分
                 if (currentTotalScore >= targetScore)
@@ -333,7 +339,7 @@ public class GameManager : MonoBehaviour
             currentScore = tempScore;
             currentScoreText.text = currentScore.ToString();//Text显示
             currentTotalScore += currentScore;
-            currentTotalScoreText.text = currentTotalScore.ToString();
+            currentTotalScoreText.text ="总分: "+ currentTotalScore.ToString();//总分显示
 
         }
     }
@@ -373,11 +379,30 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-        rePlay.gameObject.SetActive(true);//禁用
+        rePlay.gameObject.SetActive(true);//启用
+        image.gameObject.SetActive(true);
     }
 
     public void RePlayGame()
     {
         SceneManager.LoadScene("PopStar");
+    } 
+    public void PlayGame()
+    {
+        PalyGame.SetActive(false);
+    }
+    public void Exit()
+    {
+        ///UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+    }
+    public void Help()
+    {
+        haoheng.gameObject.SetActive(true);
+    }
+
+    public void Return()
+    {
+        PalyGame.SetActive(true);
     }
 }
