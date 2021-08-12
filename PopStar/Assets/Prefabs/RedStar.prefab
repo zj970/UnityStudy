@@ -142,4 +142,4 @@ MonoBehaviour:
   starColor: 4
   moveDownCount: 0
   moveLeftCount: 0
-  speed: 8
+  speed: 5

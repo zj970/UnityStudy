@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,16 @@ public class GameManager : MonoBehaviour
     public int maxRow = 10;//行
     public int maxColemn = 12;//列
     public GameObject starGroup;//所有星星的父物体
+
+    //音效
+    public AudioSource clearSource;
+    public AudioSource backgroundMusic;
+
+    //特效
+    public ParticleSystem[] particles;
+    public float desTime = 1.5f;
+
+
     /// <summary>
     /// 所有星星的集合
     /// </summary>
@@ -19,6 +30,8 @@ public class GameManager : MonoBehaviour
     public List<Star> ClickedStarList;
 
     public static GameManager gameManager_Instance;
+
+    public Button rePlay;
 
     //分数
     public Text currentScoreText;
@@ -47,6 +60,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     void GameStart(int hurdle)
     {
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.Play();
+        }
+        rePlay.gameObject.SetActive(false);//禁用
+
         HurdleIndex = hurdle;
         currentTotalScore = 0;
         currentScore = 0;
@@ -173,6 +192,17 @@ public class GameManager : MonoBehaviour
             //销毁
             foreach (var item in ClickedStarList)
             {
+                //添加粒子特效
+                int colorIndex = (int)item.starColor;
+                if (particles.Length>=colorIndex)
+                {
+                    ParticleSystem parObj = particles[colorIndex];
+                    var obj = Instantiate(parObj, starGroup.transform);
+                    obj.transform.localPosition = item.transform.localPosition;
+
+                    Destroy(obj,desTime);
+                }
+
                 item.DestroyStar();
                 starList.Remove(item);
             }
@@ -228,16 +258,17 @@ public class GameManager : MonoBehaviour
                     restStar.OpenMoveLeft();
                 }
             }
+            if (clearSource != null)
+            {
+                clearSource.Play();
+            }
+
         }
 
         //分数计算
         CalculateScore(ClickedStarList.Count);
         ClickedStarList.Clear();
-        JudgeHurdleOver();
-        if (judgeSwitch == 0)
-        {
-            judgeSwitch = 1;
-        }
+        JudgeHurdleOver();      
 
     }
 
@@ -256,20 +287,32 @@ public class GameManager : MonoBehaviour
         ClickedStarList.Clear();
         if (isOver)
         {
-            //Hurdle Over
-            RestStarRewardScore(starList.Count);
-            //Debug.Log("游戏结束");
-            //判断总得分是否超过目标分
-            if (currentTotalScore >= targetScore)
+            if (judgeSwitch == 0)
             {
-                //Next Hurdle
-                int index = HurdleIndex + 1;
-                GameStart(index);
+                judgeSwitch = 1;
+                //Hurdle Over
+                RestStarRewardScore(starList.Count);
+                foreach (var restStar in starList)
+                {
+                    restStar.DestroyStar();
+                }
+                starList.Clear();
+                //Debug.Log("游戏结束");
+                //判断总得分是否超过目标分
+                if (currentTotalScore >= targetScore)
+                {
+                    //Next Hurdle
+                    int index = HurdleIndex + 1;
+                    GameStart(index);
+                }
+                else
+                {
+                    //GameOver
+                    Debug.Log("结束游戏");
+                    GameOver();
+                }
             }
-            else
-            {
-                //GameOver
-            }
+
         }
       
     }
@@ -326,5 +369,15 @@ public class GameManager : MonoBehaviour
             }
         }
         targetScoreText.text = "目标：" + targetScore.ToString();
+    }
+
+    void GameOver()
+    {
+        rePlay.gameObject.SetActive(true);//禁用
+    }
+
+    public void RePlayGame()
+    {
+        SceneManager.LoadScene("PopStar");
     }
 }

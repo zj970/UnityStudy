@@ -36,7 +36,7 @@ public class Star : MonoBehaviour
             //当前的位置为 Column * 48 ,需要移动的距离 48 * moveDownCount,最终移动到达的位置 (Column - moveLeftCount)*48f
             if (this.transform.localPosition.y> targetRow * 48f)
             {
-                this.transform.Translate(Vector3.down * speed );
+                this.transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
             else
             {
@@ -54,7 +54,7 @@ public class Star : MonoBehaviour
             //当前的位置为 row * 48 ,需要移动的距离 48 * moveDownCount,最终移动到达的位置 row * 48 - 48 * moveDownCount
             if (this.transform.localPosition.x > targetColumn * 48f)
             {
-                this.transform.Translate(Vector3.left * speed);
+                this.transform.Translate(Vector3.left * speed * Time.deltaTime);
             }
             else
             {
