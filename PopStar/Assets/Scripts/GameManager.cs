@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     //音效
     public AudioSource clearSource;
     public AudioSource backgroundMusic;
+    public AudioSource readygo;
 
     //特效
     public GameObject[] particles;
@@ -390,6 +391,7 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         PalyGame.SetActive(false);
+        readygo.Play();
     }
     public void Exit()
     {

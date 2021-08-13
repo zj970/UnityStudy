@@ -19,9 +19,9 @@ public class Star : MonoBehaviour
     public int Column = 0;
     public StarColor starColor = StarColor.blue;
 
-    public int moveDownCount = 0;   
+    public int moveDownCount = 0;
     public int moveLeftCount = 0;
-    private bool isMoveDown = false; 
+    private bool isMoveDown = false;
     private bool isMoveLeft = false;
     public float speed = -2f;
     private int targetRow = 0;
@@ -34,16 +34,16 @@ public class Star : MonoBehaviour
         if (isMoveDown)
         {
             Row = targetRow;
-           // Vector3 downVector = new Vector3(0, -1, 0);
+            // Vector3 downVector = new Vector3(0, -1, 0);
             //当前的位置为 Column * 48 ,需要移动的距离 48 * moveDownCount,最终移动到达的位置 (Column - moveLeftCount)*48f
-            if (this.transform.localPosition.y> (targetRow * 48f))
+            if (this.transform.localPosition.y > (targetRow * 48f))
             {
-                this.transform.Translate(Vector3.down * speed*Time.deltaTime);
+                this.transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
             //会有一定时间延迟
             else
             {
-                this.transform.localPosition = new Vector3( this.transform.localPosition.x, targetRow * 48f, this.transform.localPosition.z);
+                this.transform.localPosition = new Vector3(this.transform.localPosition.x, targetRow * 48f, this.transform.localPosition.z);
                 isMoveDown = false;
                 moveDownCount = 0;
 
@@ -62,7 +62,7 @@ public class Star : MonoBehaviour
             }
             else
             {
-                this.transform.localPosition = new Vector3(targetColumn * 48f,this.transform.localPosition.y, this.transform.localPosition.z);
+                this.transform.localPosition = new Vector3(targetColumn * 48f, this.transform.localPosition.y, this.transform.localPosition.z);
                 isMoveLeft = false;
                 moveLeftCount = 0;
 

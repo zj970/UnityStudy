@@ -10,6 +10,4 @@ public class Particle : MonoBehaviour
     {
         Destroy(this.gameObject,desTime);
     }
-
-
 }
