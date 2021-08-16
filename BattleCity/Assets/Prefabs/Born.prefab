@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7484627126173735524}
   - component: {fileID: 1694864647733379519}
+  - component: {fileID: 114526900806053130}
   - component: {fileID: 4948652093857039255}
   m_Layer: 0
   m_Name: Born
@@ -51,6 +52,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114526900806053130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107187106861632808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17d26902c034ca4d9a18ad72ddc8a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invekeTime: 0.75
+  tankList:
+  - {fileID: 4195235477291573894, guid: 6da872f74b213414f99a98e3a21ab643, type: 3}
+  - {fileID: 206567069511356246, guid: 6268c69800851c748912bd46808ad952, type: 3}
+  - {fileID: 6003377694200785424, guid: fba979da54b546c45a4ba9955edf9b76, type: 3}
+  - {fileID: 2260199718229732573, guid: 21c01c89c253a2c4683c69d7091f8df7, type: 3}
+  tankType: 0
 --- !u!212 &4948652093857039255
 SpriteRenderer:
   m_ObjectHideFlags: 0

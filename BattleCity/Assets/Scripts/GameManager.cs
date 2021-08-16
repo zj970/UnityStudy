@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TankType
+{
+    Player,
+    Enemy1,
+    Enemy2,
+    Enemy3
+}
+
 public class GameManager : MonoBehaviour
 {
 
@@ -12,13 +20,23 @@ public class GameManager : MonoBehaviour
     public GameObject AirWall;
     public GameObject Maps;
 
+    public GameObject born;
+    public GameObject[] bornPos;
+    public TankType enemyTankType = TankType.Enemy1;
+    public Vector3 enemyTankPos = Vector3.zero;
+    public float enemyBornTimeInterval = 2f;
+
+
     private void Start()
     {
-        CreatAirWall();
+        CreateAirWall();
+        CreatePlayer();
+        CreateEnemy();
+        InvokeRepeating("CreateEnemy",0.1f, enemyBornTimeInterval);//延迟委托，并且会一直调用
     }
 
-    //TODO:Creat a few AirWall on the Map
-    void CreatAirWall()
+    //TODO:Create a few AirWall on the Map
+    void CreateAirWall()
     {
         //Creat Up and Down AirWalls
         for (float i = -x_length; i <= x_length; i++)
@@ -52,5 +70,65 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Create tank
+    /// </summary>
+    void CreatePlayer()
+    {
+        if (born != null && bornPos.Length >= 4 && bornPos[0] != null)
+        {
+            var obj = Instantiate(born, bornPos[0].transform.position, born.transform.rotation);
+            obj.GetComponent<Born>().tankType = TankType.Player;
+        }
+    }
+    /// <summary>
+    /// Enemy have three pos
+    /// </summary>
+    void CreateEnemy()
+    {
+        float randomEnemy = Random.Range(0, 6);
+        float randomPos = Random.Range(0, 6);
+        if (randomEnemy <= 1)
+        {
+            enemyTankType = TankType.Enemy3;
+        }
+        if (randomEnemy > 1 && randomEnemy <= 3)
+        {
+            enemyTankType = TankType.Enemy2;
+        }
+        if (randomEnemy <= 6 && randomEnemy > 3)
+        {
+            enemyTankType = TankType.Enemy1;
+        }
+        if (bornPos.Length < 4)
+        {
+            return;
+        }
+        if (randomPos <= 2)
+        {
+            if (bornPos[1] == null)
+            {
+                return;
+            }
+            enemyTankPos = bornPos[1].transform.position;
+        }
+        if (randomPos > 2 && randomPos <= 4)
+        {
+            if (bornPos[2] == null)
+            {
+                return;
+            }
+            enemyTankPos = bornPos[2].transform.position;
+        }
+        if (randomPos <= 6 && randomPos > 4)
+        {
+            if (bornPos[3] == null)
+            {
+                return;
+            }
+            enemyTankPos = bornPos[3].transform.position;
+        }
+        var obj = Instantiate(born, enemyTankPos, born.transform.rotation);
+        obj.GetComponent<Born>().tankType = enemyTankType;
+    }
 }
