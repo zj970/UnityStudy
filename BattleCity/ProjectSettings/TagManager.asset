@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Bullet
   - Enemy
+  - AirWall
+  - GoldWall
+  - Wall
+  - Tree
+  - River
+  - Home
+  - star
   layers:
   - Default
   - TransparentFX

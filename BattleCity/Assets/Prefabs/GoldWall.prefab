@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7558694825475238322}
   m_Layer: 0
   m_Name: GoldWall
-  m_TagString: Untagged
+  m_TagString: GoldWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

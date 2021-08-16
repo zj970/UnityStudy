@@ -8,6 +8,7 @@ public class Bomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.GetComponent<AudioSource>().Play();
         Destroy(this.gameObject, invekeTime);
     }
 

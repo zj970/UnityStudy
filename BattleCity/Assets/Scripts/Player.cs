@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float bulletSpeed = 3f;
     public float enemyPH = 1f;
     public bool isDeath = false;
-
+    
     public bool isVerticalAvailable = false;
     private Vector3 playerRotation = Vector3.zero;
 
@@ -21,56 +21,61 @@ public class Player : MonoBehaviour
     //TODO:The keyboard controls the player's movement;
     private void Update()
     {
-        //Input.GetAxis("");//判断我们键盘输入，左右方向键 -1，0，1,也就是可以达到我们控制的目的
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+        if (GameManager.gameManager_Instance.game_State == GameState.running)
         {
-            isVerticalAvailable = true;
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
-        {
-            isVerticalAvailable = false;
-        }
-        if (isVerticalAvailable)
-        {
-            if (vertical > 0)
+            //Input.GetAxis("");//判断我们键盘输入，左右方向键 -1，0，1,也就是可以达到我们控制的目的
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
             {
-                playerRotation = new Vector3(0, 0, 180);
+                isVerticalAvailable = true;
             }
-            if (vertical < 0)
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
             {
-                playerRotation = Vector3.zero;
+                isVerticalAvailable = false;
             }
-        }
-
-        if (!isVerticalAvailable)
-        {
-            if (horizontal > 0)
+            if (isVerticalAvailable)
             {
-                playerRotation = new Vector3(0, 0, 90);
-
+                if (vertical > 0)
+                {
+                    playerRotation = new Vector3(0, 0, 180);
+                }
+                if (vertical < 0)
+                {
+                    playerRotation = Vector3.zero;
+                }
             }
-            if (horizontal < 0)
+
+            if (!isVerticalAvailable)
             {
-                playerRotation = new Vector3(0, 0, 270);
+                if (horizontal > 0)
+                {
+                    playerRotation = new Vector3(0, 0, 90);
+
+                }
+                if (horizontal < 0)
+                {
+                    playerRotation = new Vector3(0, 0, 270);
+                }
             }
-        }
-        this.transform.rotation = Quaternion.Euler(playerRotation);//重置游戏对象的Rotation
+            this.transform.rotation = Quaternion.Euler(playerRotation);//重置游戏对象的Rotation
 
-        if (vertical != 0 || horizontal != 0)
-        {
-            this.transform.Translate(Vector3.up * speed * Time.deltaTime);
-        }
+            if (vertical != 0 || horizontal != 0)
+            {
+                this.transform.Translate(Vector3.up * speed * Time.deltaTime);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Fire();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Fire();
+            }
         }
         if (isDeath)
         {
             Bomb();
+            GameManager.gameManager_Instance.ReCreatePlayer();
             Destroy(this.gameObject);
+
         }
     }
 
@@ -99,6 +104,19 @@ public class Player : MonoBehaviour
         if (bomb != null)
         {
             Instantiate(bomb, this.transform.position, bomb.transform.rotation);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("star"))
+        {
+            bulletSpeed += 2;
+            if (GameManager.gameManager_Instance.currentStarCount == 1)
+            {
+                GameManager.gameManager_Instance.currentStarCount -= 1;
+            }
+            Destroy(collision.gameObject);
         }
     }
 }
