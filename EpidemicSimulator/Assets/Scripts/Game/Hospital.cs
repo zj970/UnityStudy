@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hospital : MonoBehaviour
+public class Hospital : Space
 {
     private int nowBedNum;
 
@@ -14,7 +14,13 @@ public class Hospital : MonoBehaviour
     {
         nowBedNum = num;
     }
-
+    private void Awake()
+    {
+        centerX = 400;
+        centerY = -100;
+        w = 200;
+        h = 200;
+    }
     /// <summary>
     /// 添加病人
     /// </summary>

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1668358598150201806}
   - component: {fileID: 1668358598150201792}
   - component: {fileID: 1668358598150201807}
+  - component: {fileID: 114586224899879062}
   m_Layer: 5
   m_Name: Person
   m_TagString: Untagged
@@ -27,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 1668358598150201805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 108, y: 108, z: 108}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,3 +73,15 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &114586224899879062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668358598150201805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8281a1516049b9e4ea69195f21df0151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
