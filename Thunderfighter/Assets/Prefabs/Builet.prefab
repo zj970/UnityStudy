@@ -96,6 +96,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   yLimit: 6.3
+  audios:
+  - {fileID: 8300000, guid: b7fdf5437b37efa448d827ef6991cc87, type: 3}
+  - {fileID: 8300000, guid: e0d949f1d37ece24ead952d59e27aabd, type: 3}
+  - {fileID: 8300000, guid: 0c0eb546a273f5141988aa5e803b1a0b, type: 3}
 --- !u!50 &50052743621777884
 Rigidbody2D:
   serializedVersion: 4
@@ -104,7 +108,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678504133959803096}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1

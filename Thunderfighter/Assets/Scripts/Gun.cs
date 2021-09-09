@@ -5,15 +5,25 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public GameObject bullet;
+    public float repeateRateTime = 0.1f;
 
-    private void Update()
+
+    private AudioSource audioSource;
+    public static Gun _instanceGun;
+    public AudioClip[] audios;
+
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        _instanceGun = this;
+        InvokeRepeating("CreateBullet", 0f, repeateRateTime);
+        audioSource = this.GetComponent<AudioSource>();
+    }
+
+    private void CreateBullet()
+    {
+        if (bullet != null)
         {
-            if (bullet != null)
-            {
-                Instantiate(bullet, this.transform.position, bullet.transform.rotation);
-            }
+            Instantiate(bullet, this.transform.position, bullet.transform.rotation);
         }
     }
 }
