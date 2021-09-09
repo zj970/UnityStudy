@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hero : MonoBehaviour
 {
@@ -8,14 +9,13 @@ public class Hero : MonoBehaviour
     public float yLimit = -3.5f;
     public float yMax = 5.5f;
     public float myBionergy = 10;//默认生命值
+    public Slider bloodSlider;
     public Sprite[] hreoSprites;
 
 
     //mouseOffset = currentPosition - previousPosition,将mouseOffset同步给Hero
     private void Update()
     {
-        
-
 
         if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > -xLimit && Camera.main.ScreenToWorldPoint(Input.mousePosition).x < xLimit && Camera.main.ScreenToWorldPoint(Input.mousePosition).y > yLimit && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < yMax)
         {
@@ -35,6 +35,11 @@ public class Hero : MonoBehaviour
         {
             myBionergy -= collision.gameObject.GetComponent<Enemy>().bionergy;
             Destroy(collision.gameObject);
+            if (bloodSlider != null)
+            {
+                bloodSlider.value = myBionergy;
+            }
+
             if (myBionergy <= 0)
             {
                 if (GameManager._instanceGameManager.bg!=null)

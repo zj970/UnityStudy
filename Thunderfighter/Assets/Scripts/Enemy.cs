@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         if (bionergy == 0)
         {
             GameManager._instanceGameManager.scoreSum += score;
-            GameManager._instanceGameManager.souceText.text = "总成绩为："+GameManager._instanceGameManager.scoreSum.ToString();
+            GameManager._instanceGameManager.souceText.text = GameManager._instanceGameManager.scoreSum.ToString();
             Destroy(this.gameObject);
         }
 

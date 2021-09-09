@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ThunderFighter.unity
+    guid: 6a6d6896d7c618d4ba24c2a2a131a670
   m_configObjects: {}
