@@ -64,13 +64,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AutoFire.cs" />
-    <Compile Include="Assets\Scripts\BulletsPool.cs" />
-    <Compile Include="Assets\Scripts\GameraManager.cs" />
-    <Compile Include="Assets\Scripts\GroundPool.cs" />
-    <Compile Include="Assets\Scripts\Move.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\UIagm.cs" />
+    <Compile Include="Assets\Scripts\CustomMesh\CubeTest.cs" />
+    <Compile Include="Assets\Scripts\CustomMesh\MeshEditorPoint.cs" />
+    <Compile Include="Assets\Scripts\CustomMesh\ModelMeshEditor.cs" />
+    <Compile Include="Assets\Scripts\CustomMesh\TestGenerateSlimpleMesh.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\AutoFire.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\BulletsPool.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\CreatGround.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\GameraManager.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\GroundPool.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\Move.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\Player.cs" />
+    <Compile Include="Assets\Scripts\UIAigorithm\UIagm.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/unityProjectEngineering/ObjectPool/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
