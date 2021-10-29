@@ -64,15 +64,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BulletPool.cs" />
-    <Compile Include="Assets\Scripts\CameraManager.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\Scripts\EnemyPool.cs" />
-    <Compile Include="Assets\Scripts\GamePool.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\RayTarget.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyPool.cs" />
+    <Compile Include="Assets\Scripts\GameManager\CameraManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GamePool.cs" />
+    <Compile Include="Assets\Scripts\GameManager\LivingEnity.cs" />
+    <Compile Include="Assets\Scripts\GameManager\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\Login\Dicteory_List.cs" />
+    <Compile Include="Assets\Scripts\Login\SaveScore.cs" />
+    <Compile Include="Assets\Scripts\Login\UserLogin.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\BulletController.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet\BulletPool.cs" />
+    <Compile Include="Assets\Scripts\Player\Gun\Gun.cs" />
+    <Compile Include="Assets\Scripts\Player\Gun\GunController.cs" />
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <None Include="Assets\StreamingAssets\data\Score.txt" />
+    <None Include="Assets\StreamingAssets\data\Useneed.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/unityProjectEngineering/EnemyFSM/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

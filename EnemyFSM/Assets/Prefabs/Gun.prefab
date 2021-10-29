@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4781058117798958285}
-  - component: {fileID: 554566544241126793}
+  - component: {fileID: 221489397993288091}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -294,7 +294,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &554566544241126793
+--- !u!114 &221489397993288091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,13 +303,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6833664470226370810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc4cc58460f0ac488c72edfbc01f80c, type: 3}
+  m_Script: {fileID: 11500000, guid: a49296a1ceac3ac40978f99eda8d8b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   muzzie: {fileID: 1362839313893093269}
-  projectile: {fileID: 114375519118795268, guid: 8c67c390c105b6843b4b348125b6cd33,
-    type: 3}
-  msBetweenShots: 100
+  msBetweenshoots: 1
   muzzleVelocity: 35
 --- !u!1 &9097527698373499844
 GameObject:
