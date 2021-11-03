@@ -8,7 +8,7 @@ using UnityEngine.UI;
 /// </summary>
 public class Card : MonoBehaviour
 {
-    //TODO:属性和方法
+    //TODO:属性
     #region 初始化
     /// <summary>
     /// 扑克类型
@@ -44,11 +44,35 @@ public class Card : MonoBehaviour
     //牌的类型
     public CARD_TYPE card_type = CARD_TYPE.BLOCK;//默认为方块
 
-
     //卡牌所在类型的索引,代表大小
     public int cardIndex;
+
+    //是否选中
+    public bool isSelected;
+
+    //获得当前位置信息
+    public Vector3 pokerPos;
 
     #endregion
 
 
+    //TODO：方法
+
+    /// <summary>
+    /// 设置选择状态
+    /// </summary>
+    public void SetSelectState()
+    {
+        //记录当前位置
+        pokerPos = this.transform.position;
+        if (isSelected)
+        {
+            this.transform.position += new Vector3(0, 10, 0); 
+        }
+        else
+        {
+            this.transform.position = pokerPos;//重置位置
+        }
+        isSelected = !isSelected;
+    }
 }

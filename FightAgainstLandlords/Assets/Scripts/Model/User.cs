@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// 玩家类型
@@ -55,4 +56,25 @@ public class User : MonoBehaviour
     public PLAYER_TYPE player_type = PLAYER_TYPE.FARMER;//默认为农民
     //玩家状态 
     public PLAYER_STATE player_state = PLAYER_STATE.PREGAME;//默认为准备状态
+
+
+    //TODO:直接选择当农民还是地主
+
+    /// <summary>
+    /// 当农民
+    /// </summary>
+    public void btn_farmer()
+    {
+        player_type = PLAYER_TYPE.FARMER;//设置为农民
+    }
+
+    /// <summary>
+    /// 当地主
+    /// </summary>
+    public void btn_landlord()
+    {
+        player_type = PLAYER_TYPE.LANDLORD;//设置为地主
+    }
+
+    //TODO:把牌排列整齐
 }
