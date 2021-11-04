@@ -64,15 +64,17 @@ public class Card : MonoBehaviour
     public void SetSelectState()
     {
         //记录当前位置
-        pokerPos = this.transform.position;
-        if (isSelected)
+        //pokerPos = this.transform.position;
+        if (!isSelected)
         {
-            this.transform.position += new Vector3(0, 10, 0); 
+            this.transform.position += new Vector3(0, 10, 0);
         }
         else
         {
-            this.transform.position = pokerPos;//重置位置
+            //this.transform.position = pokerPos;//重置位置
+            this.transform.position -= new Vector3(0, 10, 0);
         }
         isSelected = !isSelected;
+        print(isSelected);
     }
 }

@@ -169,7 +169,7 @@ public class CardRule
                 }
             }
             //不超过A
-            if (cards[i].cardIndex > 12 || cards[i + 2].cardIndex > 12)
+            if (cards[i].cardIndex > 12 || cards[i-1].cardIndex > 12)
             {
                 return false;
             }
@@ -336,7 +336,7 @@ public class CardRule
                 }
 
                 //不超过A
-                if (cards[i].cardIndex > 12 || cards[i + 3].cardIndex > 12)
+                if (cards[i].cardIndex > 12 || cards[i - 3].cardIndex > 12)
                 {
                     return false;
                 }

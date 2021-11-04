@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Windows;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,8 @@ public class Login : MonoBehaviour
 
     public static string getName;//传递用户名
     public static string intergral;//传递积分
+    public static List<string> Ranking = new List<string>();//传递数据
+    private static string sqlRank = "select username,intergral from user order by intergral desc limit 3";
     /// <summary>
     /// 登录事件
     /// </summary>
@@ -35,8 +38,8 @@ public class Login : MonoBehaviour
                 //1.创建数据库连接
                 SqlAccess.sqlInstance.OpenSql();
                 //2.执行Sql语句
-                string sqlSel = "select count(*) from user where username = " + userName + " and password = " + password;
-                string sqlGet = "select intergral from user where username = " + userName;
+                string sqlSel = "select count(*) from user where username = '"+ userName + "' and password = '" + password+"'";
+                string sqlGet = "select intergral from user where username = '" + userName+"'";
                 print(sqlSel);
                 MySqlCommand com = new MySqlCommand(sqlSel, SqlAccess.sqlInstance.dbConnection);
                 //3.判断
@@ -44,16 +47,29 @@ public class Login : MonoBehaviour
                 {
                     //跳转到主界面
                     print("登录成功");
+                    //com = new MySqlCommand(sqlGet, SqlAccess.sqlInstance.dbConnection);//重置Sql,查询积分
+                    //MySqlDataReader read_com = com.ExecuteReader();//写入
+                    //while (read_com.Read())
+                    //{
+                    //    print(read_com[0]);
+                    //    intergral = read_com[0].ToString();
+                    //}
+                    //print(intergral);
+                    getName = userName;
+
+                    com = new MySqlCommand(sqlRank, SqlAccess.sqlInstance.dbConnection);//重置Sql,查询积分
+                    MySqlDataReader read = com.ExecuteReader();//写入
+                    while (read.Read())
+                    {
+                        //print(read.FieldCount);
+                        for (int i = 0; i < read.FieldCount; i++)
+                        {
+                            Ranking.Add(read[i].ToString());
+                            //print(read[i].ToString());
+                        }
+                    }
                     //Application.LoadLevelAsync("MainScene");//异步加载场景,方法过时
                     SceneManager.LoadSceneAsync("MainScene");
-                    com = new MySqlCommand(sqlGet, SqlAccess.sqlInstance.dbConnection);//重置Sql,查询积分
-                    MySqlDataReader read_com = com.ExecuteReader();//写入
-                    while (read_com.Read())
-                    {
-                        print(read_com[0]);
-                        intergral = read_com[0].ToString();
-                    }
-                    getName = userName;
                 }
                 //用户名或密码错误，提示
                 else

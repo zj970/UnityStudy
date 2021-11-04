@@ -22,6 +22,9 @@ public class Cardbox : MonoBehaviour
     //位置
     public Transform cardPos;
 
+    //位置
+    public Transform heapPos;
+
     List<Card>[] player = new List<Card>[3] { new List<Card>(), new List<Card>(), new List<Card>() };
 
 
@@ -45,7 +48,6 @@ public class Cardbox : MonoBehaviour
         {
             //print(pokers[i * 3]);
             //print(player);
-
             player[0].Add(pokers[i * 3]);
             player[1].Add(pokers[i * 3 + 1]);
             player[2].Add(pokers[i * 3 + 2]);
@@ -142,7 +144,7 @@ public class Cardbox : MonoBehaviour
             //1.首先判断点数大小，如果点数相同就选择第二点
             //2.其次判断类型顺序
             isSort = false;
-            int spriteIndex = cards[i].cardIndex * 4 + (int)cards[i].card_type;         
+            int spriteIndex = cards[i].cardIndex * 4 + (int)cards[i].card_type;
             //从小到大排序 
             for (int j = 0; j < cards.Count - 1 - i; j++)
             {
@@ -167,5 +169,69 @@ public class Cardbox : MonoBehaviour
 
         }
         return cards;
+    }
+
+    /// <summary>
+    /// 设置牌的位置
+    /// </summary>
+    /// <param name="cards"></param>
+    public void SetCardPos(List<Card> cards)
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].GetComponent<Image>().sprite = GetCardSp(cards[i]);
+            cards[i].GetComponent<Transform>().position = new Vector3(heapPos.position.x + i * 20, heapPos.position.y, heapPos.position.z);
+        }
+    }
+
+
+    /// <summary>
+    /// 设置牌的位置
+    /// </summary>
+    /// <param name="cards"></param>
+    public void SetCardPos(List<Card> cards,Transform cardsPos)
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].GetComponent<Transform>().position = new Vector3(cardsPos.position.x + i * 20, cardsPos.position.y, cardsPos.position.z);
+        }
+    }
+
+    /// <summary>
+    /// 获取牌的图像
+    /// </summary>
+    /// <param name="card"></param>
+    /// <returns></returns>
+    public Sprite GetCardSp(Card card)
+    {
+
+        //对大小王单独处理
+        if ((card.cardIndex * 4 + (int)card.card_type) == 56)
+        {
+            return card.GetComponent<Image>().sprite = Cardbox._instanceCardbox.cardSprite[52];
+        }
+        else if ((card.cardIndex * 4 + (int)card.card_type) == 61)
+        {
+            return card.GetComponent<Image>().sprite = Cardbox._instanceCardbox.cardSprite[53];
+        }
+        else
+        {
+            return card.GetComponent<Image>().sprite = Cardbox._instanceCardbox.cardSprite[card.cardIndex * 4 + (int)card.card_type];
+        }
+    }
+
+    /// <summary>
+    /// 设置其余玩家牌的位置，并显示数量
+    /// </summary>
+    /// <param name="cards">牌库</param>
+    /// <param name="count">数量</param>
+    /// <param name="cardPos">位置</param>
+    public void SetCardPos(List<Card> cards, Text count, Transform cardPos)
+    {
+        count.text = cards.Count.ToString();
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].GetComponent<Transform>().position = cardPos.position;
+        }
     }
 }

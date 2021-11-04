@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Controller\CardRule.cs" />
     <Compile Include="Assets\Scripts\Controller\GameManager.cs" />
     <Compile Include="Assets\Scripts\Controller\Login.cs" />
+    <Compile Include="Assets\Scripts\Controller\RankingListController.cs" />
     <Compile Include="Assets\Scripts\Controller\Register.cs" />
     <Compile Include="Assets\Scripts\Controller\Test.cs" />
     <Compile Include="Assets\Scripts\Model\Card.cs" />
@@ -305,6 +306,9 @@
     </Reference>
     <Reference Include="System.Drawing">
       <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
@@ -669,6 +673,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Unity/Unity-2018.4.3f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2143A24A-ADEA-02BB-E533-56406C5ABC62}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
