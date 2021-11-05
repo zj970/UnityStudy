@@ -38,7 +38,8 @@ public class Login : MonoBehaviour
                 //1.创建数据库连接
                 SqlAccess.sqlInstance.OpenSql();
                 //2.执行Sql语句
-                string sqlSel = "select count(*) from user where username = '"+ userName + "' and password = '" + password+"'";
+                //string sqlSel = "select * from user";
+                string sqlSel = "select count(*) from user where username = \'" + userName + "\' and password = \'" + password+"\'";
                 string sqlGet = "select intergral from user where username = '" + userName+"'";
                 print(sqlSel);
                 MySqlCommand com = new MySqlCommand(sqlSel, SqlAccess.sqlInstance.dbConnection);
@@ -65,7 +66,7 @@ public class Login : MonoBehaviour
                         for (int i = 0; i < read.FieldCount; i++)
                         {
                             Ranking.Add(read[i].ToString());
-                            //print(read[i].ToString());
+                            print(read[i].ToString());
                         }
                     }
                     //Application.LoadLevelAsync("MainScene");//异步加载场景,方法过时

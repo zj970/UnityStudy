@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AI\EasyAI.cs" />
     <Compile Include="Assets\Scripts\Controller\CardRule.cs" />
     <Compile Include="Assets\Scripts\Controller\GameManager.cs" />
     <Compile Include="Assets\Scripts\Controller\Login.cs" />

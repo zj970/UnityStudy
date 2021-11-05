@@ -31,7 +31,7 @@ public class Register : MonoBehaviour
                 //1.创建数据库连接
                 SqlAccess.sqlInstance.OpenSql();
                 //2.执行Sql语句
-                string sqlSel = "insert into user (username,password) values ('" + userName + " ','" + password + "')";
+                string sqlSel = "insert into user (username,password) values ('" + userName.ToString() + " ','" + password.ToString() + "')";
                 object data = SqlAccess.sqlInstance.ExecuteQuery(sqlSel);
                 //3.判断
                 if (data != null)

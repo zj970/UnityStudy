@@ -40,14 +40,6 @@ public enum PLAYER_STATE
     /// </summary>
     QUIT = 3,
 }
-/// <summary>
-/// 倒计时状态
-/// </summary>
-public enum CountDownTypes
-{
-    Bid,
-    Follow
-}
 
 /// <summary>
 /// 玩家实例
@@ -59,16 +51,14 @@ public class User : MonoBehaviour
     //存放扑克牌
     public List<Card> playerPokers = new List<Card>();
 
+    
+
     //玩家类型
     public PLAYER_TYPE player_type = PLAYER_TYPE.FARMER;//默认为农民
     //玩家状态 
     public PLAYER_STATE player_state = PLAYER_STATE.PREGAME;//默认为准备状态
 
-    private int consideratingBidTime = 12; //玩家考虑时间
-    private int consideratingFollowTime = 20; //玩家考虑时间
-    protected bool isMyTerm = false;  //当前是否是自己回合
-
-
+    public bool isMyTerm = false;  //当前是否是自己回合
 
 
     //TODO:直接选择当农民还是地主
@@ -91,7 +81,55 @@ public class User : MonoBehaviour
         //TODO:获得底牌
     }
 
+
+    //TODO：写一个出牌的方法 : 只有当属于自己的回合的时候才能出牌
+    /// <summary>
+    /// 开始出牌
+    /// </summary>
+    public void PopCards()
+    {
+        isMyTerm = true;
+        GameManager._instance.StopCountDown();
+        //等待，开始计时
+        GameManager._instance.StartCountDown();
+
+    }
+
+    /// <summary>
+    /// 出牌
+    /// </summary>
+    public void ForFollow()
+    {
+
+        //关闭倒计时
+        GameManager._instance.StopCountDown();
+        //选择的牌，添加到出牌区域
+        GameManager._instance.btn_LandlordPlay();
+        isMyTerm = false;
+
+    }
+
+    /// <summary>
+    /// 不出
+    /// </summary>
+    public void NotFollow()
+    {
+        //关闭倒计时
+        GameManager._instance.StopCountDown();
+        isMyTerm = false;//顺序很重要！！！！！！！！！！！！！！！！！！！！！！！！！！！
+        GameManager._instance.NotFollow();
+
+
+    }
+
+   
     //TODO:把牌排列整齐
-    //已在CardBOx类中实现
+    //已在CardBox类中实现
+
+    //1.首先判断当前用户是否是 地主
+    // 判断player_type == PLAYER_TYPE.LANDLOD;
+    //2.由地主 第一轮 出牌
+    //出牌进入倒计时，开始==到计时，倒计时(未出牌)完了，默认出 某种牌
+    //牌出完，倒计时提前结束，轮到下位出牌，下一位玩家开始倒计时，出牌
 
 }

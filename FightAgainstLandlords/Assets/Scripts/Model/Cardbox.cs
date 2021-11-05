@@ -234,4 +234,6 @@ public class Cardbox : MonoBehaviour
             cards[i].GetComponent<Transform>().position = cardPos.position;
         }
     }
+
+
 }

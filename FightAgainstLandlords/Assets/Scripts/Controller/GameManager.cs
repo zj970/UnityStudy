@@ -64,16 +64,30 @@ public class GameManager : MonoBehaviour
     private User farmerA = new User();
     private User farmerB = new User();
 
+    public List<User> Players;
+
     //TODO:初始化出牌的容器
     /// <summary>
     /// 出牌的容器
     /// </summary>
     public List<Card> playCards = new List<Card>();
+
+    public static GameManager _instance;
+
+    public int notFollowIndex = 0;  //不跟累计，如果=2，则对手要不起，继续出牌
+    private int termStartIndex;  //回合开始玩家索引
+    private int termCurrentIndex;  //回合当前玩家索引
+
     public Transform playPos;
     /// <summary>
     /// 出手的牌型
     /// </summary>
     DDZ_POKER_TYPE playCards_type = DDZ_POKER_TYPE.NOT_OUT;
+
+    //当前出手的玩家
+    private User player = new User();
+
+    public int consideratingFollowTime = 5;
 
     /**************************************UI*****************************************************/
     //准备按钮
@@ -96,6 +110,9 @@ public class GameManager : MonoBehaviour
     public GameObject LandlordCard3;
     //玩家姓名
     public Text name01;
+    //倒计时
+    public Text countDown;
+    public Text countDownName;
     /**************************************UI*****************************************************/
 
 
@@ -111,6 +128,7 @@ public class GameManager : MonoBehaviour
         {
             name01.text = Login.getName;
         }
+        _instance = this;
     }
 
     /// <summary>
@@ -163,6 +181,16 @@ public class GameManager : MonoBehaviour
         Cardbox._instanceCardbox.SortCards(landlord.playerPokers);
         Cardbox._instanceCardbox.SortCards(farmerA.playerPokers);
         Cardbox._instanceCardbox.SortCards(farmerB.playerPokers);
+
+        //添加到玩家的集合
+        Players.Add(landlord);
+        Players.Add(farmerA);
+        Players.Add(farmerB);
+        //测试
+        /*for (int i = 0; i < Players.Count; i++)
+        {
+            print("玩家类型"+Players[i].player_type);
+        }*/
     }
 
     //3.开始抢地主 --->这里设置的是直接选择，跳过这个环节
@@ -181,6 +209,13 @@ public class GameManager : MonoBehaviour
         farmerA.player_state = PLAYER_STATE.RUNNING;
         farmerB.player_state = PLAYER_STATE.RUNNING;
         //1.从两个农民库中随机抽选一个牌库，这里选择农民A
+        farmerA.player_type = PLAYER_TYPE.LANDLORD;
+
+        //测试
+       /* for (int i = 0; i < Players.Count; i++)
+        {
+            print(i+"玩家类型" + Players[i].player_type);
+        }*/
 
         //2.播放发牌动画，实则已经发完牌
 
@@ -197,8 +232,8 @@ public class GameManager : MonoBehaviour
         FarmerBtn.SetActive(false);
         LandlordBtn.SetActive(false);
 
-        //激活按钮
-        PopCards.SetActive(true);
+        //激活出牌按钮 --> 测试用的
+        //PopCards.SetActive(true);
     }
 
     /// <summary>
@@ -210,6 +245,10 @@ public class GameManager : MonoBehaviour
         landlord.player_state = PLAYER_STATE.RUNNING;
         farmerA.player_state = PLAYER_STATE.RUNNING;
         farmerB.player_state = PLAYER_STATE.RUNNING;
+
+        landlord.player_type = PLAYER_TYPE.LANDLORD;
+        //轮到自己的回合
+        landlord.isMyTerm = true;
         //1.获得地主牌
 
         //2.播放发牌动画
@@ -222,13 +261,41 @@ public class GameManager : MonoBehaviour
         Cardbox._instanceCardbox.SetCardPos(farmerA.playerPokers,player1HeapPosText,player1HeapPos);
         Cardbox._instanceCardbox.SetCardPos(farmerB.playerPokers,player2HeapPosText,player2HeapPos);
 
+        //测试
+        /*for (int i = 0; i < Players.Count; i++)
+        {
+            print(i + "玩家类型" + Players[i].player_type);
+        }*/
+
         //失活按钮
         LandlordBtn.SetActive(false);
         FarmerBtn.SetActive(false);
 
         //激活按钮
         PopCards.SetActive(true);
+
+        //TODO：开始回合倒计时 ---> 写一个倒计时的协程
+        StartCountDown();
     }
+
+    /// <summary>
+    /// 开始计时
+    /// </summary>
+    public void StartCountDown()
+    {
+        StartCoroutine("FollowConsiderating");//时间到了     
+    }
+    
+    /// <summary>
+    /// 关闭计时
+    /// </summary>
+    public void StopCountDown()
+    {
+        StopCoroutine("FollowConsiderating");//时间到了     
+    }
+
+
+
 
     /// <summary>
     /// 发牌动画
@@ -257,7 +324,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// 判断手中的牌是否被选择
     /// </summary>
-    public void LookPlayCards(List<Card>cards)
+    public void LookPlayCards(List<Card> cards)
     {
         //遍历手中的牌
         for (int i = 0; i < cards.Count; i++)
@@ -275,10 +342,10 @@ public class GameManager : MonoBehaviour
             print(playCards_type);
 
             //出牌，删除两个牌库，一个是手中的牌库，一个是出的牌库
-            for (int i = 0; i < playCards.Count; i++)
+            /*for (int i = 0; i < player.playCards.Count; i++)
             {
-                cards.Remove(playCards[i]);
-            }
+                cards.Remove(player.playCards[i]);
+            }*/
             //重置位置
             Cardbox._instanceCardbox.SetCardPos(cards);//重置手中牌的位置
             Cardbox._instanceCardbox.SetCardPos(playCards, playPos);//重置手中牌的位置
@@ -293,12 +360,48 @@ public class GameManager : MonoBehaviour
     //5.2判断出牌的类型，是否满足出牌
     public void btn_LandlordPlay()
     {
+        //获得当前出手玩家 + 名字
+
+        for (int i = 0; i < Players.Count; i++)
+        {
+            print(i+"玩家"+ Players[i].player_type + "是否为本局出手" + Players[i].isMyTerm);
+            if (Players[i].isMyTerm)
+            {
+                print("本回合出手玩家"+i);
+                countDownName.text = "玩家" + i + "正在出手";
+                player = Players[i];
+            }
+        }
+
         //判断能否出牌
-        LookPlayCards(landlord.playerPokers);
+        LookPlayCards(player.playerPokers);//当前回合玩家所拥有的牌
         //清空出牌库
         playCards.Clear();
+        //player.isMyTerm = false;
+        //TODO：并设置下一个玩家出牌 ----> SetNextPlayer(）方法
+        //SetNextPlayer();
+        //下一个玩家出牌 ---> 下一个玩家的状态为在本回合
+        print("打印下一回合玩家"+termCurrentIndex);
+        Players[termCurrentIndex].PopCards();
+
+        //当前玩家按钮出牌消失
+
+    }
+
+    public void NotFollow()
+    {
+
+        //上轮玩家出牌清空;
+        //Players[termCurrentIndex].isMyTerm = false;
+        SetNextPlayer();
+        Players[termCurrentIndex].PopCards();
+        notFollowIndex++;
+
     }
     //6.下家出牌，轮流循环出牌，直至 要不起牌 ，由 出牌最大者 开始新一轮出牌
+    //TODO:出牌回合：进入出牌阶段、出牌(规则：满足类型且数量大，牌力值也得大)、不出
+    //改变User的基类
+
 
     //7.游戏结束 ---- 判断玩家中谁的牌数量 为 0 ，则判断玩家 类型 从而判断 谁获胜，
     //7.1地主获胜 积分+2， 农民  积分-1
@@ -308,9 +411,57 @@ public class GameManager : MonoBehaviour
 
     //TODO:出牌规则------------>已在CardRule类中实现
     //TODO:出牌时防止玩家乱出，出的牌一定要排序！
-   
+
+
+    /// <summary>
+    /// 考虑出牌的倒计时
+    /// </summary>
+    public IEnumerator FollowConsiderating()
+    {
+        var time = consideratingFollowTime;
+        while (time >= 0)
+        {
+            countDown.text = time.ToString();
+
+            yield return new WaitForSeconds(1);
+
+            time--;
+        }
+        print("时间到了");
+        player.NotFollow();
+    }
+
+    /// <summary>
+    /// 设置下一个玩家
+    /// </summary>
+    public void SetNextPlayer()
+    {
+        //利用下标索引，循环设置是否处于本玩家的回合
+        print(Players.Count);
+        termCurrentIndex = (termCurrentIndex + 1) % Players.Count;
+
+        for (int i = 0; i < Players.Count; i++)
+        {
+            print(i+"玩家"+ Players[i].isMyTerm);
+            if (Players[i].isMyTerm)
+            {
+                print("本回合出手玩家" + i);
+                countDownName.text = "玩家" + i + "正在出手";
+                player = Players[i];
+                if (i==0)
+                {
+                    PopCards.SetActive(true);
+                }
+                else
+                {
+                    PopCards.SetActive(false);
+                }
+            }
+        }
+    }
 }
 
 //2021-11-4
 //问题1 ： 登录界面，注册完后无法登录
 //初步从猜测：数据结构的问题 用到了string,还有数据结构的问题
+
