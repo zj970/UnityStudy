@@ -49,10 +49,6 @@ public class Card : MonoBehaviour
 
     //是否选中
     public bool isSelected;
-
-    //获得当前位置信息
-    public Vector3 pokerPos;
-
     #endregion
 
 

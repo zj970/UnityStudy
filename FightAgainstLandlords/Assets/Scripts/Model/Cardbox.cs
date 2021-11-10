@@ -10,7 +10,7 @@ public class Cardbox : MonoBehaviour
     //静态化单例
     public static Cardbox _instanceCardbox;
 
-    //存放扑克牌
+    //存放全部的扑克牌
     public List<Card> pokers = new List<Card>();
 
     //精灵图片
@@ -25,6 +25,7 @@ public class Cardbox : MonoBehaviour
     //位置
     public Transform heapPos;
 
+    //存放三个玩家的牌
     List<Card>[] player = new List<Card>[3] { new List<Card>(), new List<Card>(), new List<Card>() };
 
 

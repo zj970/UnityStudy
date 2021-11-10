@@ -1888,7 +1888,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!222 &1162803118
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1942,10 +1941,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2653d712a8197f4eace70388a1f6593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Players: []
+  outCardBox: []
   notFollowIndex: 0
   playPos: {fileID: 537428631}
+  player: {fileID: 0}
   consideratingFollowTime: 5
+  playCards_type: 0
   prepareBtn: {fileID: 106889689}
   FarmerBtn: {fileID: 457542052}
   LandlordBtn: {fileID: 2146738720}
@@ -1993,7 +1994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPokers: []
-  playCards: []
+  outCards: []
   player_type: 0
   player_state: 0
   isMyTerm: 0
@@ -2047,7 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.9371233, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2058,7 +2059,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -2424,6 +2425,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1464386615}
         m_MethodName: btn_Rank
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
+      - m_Target: {fileID: 1464386615}
+        m_MethodName: btn_show
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3452,8 +3464,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217898807}
-        m_MethodName: btn_LandlordPlay
+      - m_Target: {fileID: 1217898809}
+        m_MethodName: ForFollow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3710,7 +3722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.9371233, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3721,7 +3733,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -3940,7 +3952,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4277524609369082565
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,7 +4024,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!114 &4277524609798416486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4122,7 +4132,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4277524610005428653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,7 +4223,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4277524610268685181
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,7 +4313,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4277524610790590973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,7 +4404,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!1 &4277524610871094973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4472,7 +4478,6 @@ MonoBehaviour:
   card_type: 0
   cardIndex: 0
   isSelected: 0
-  pokerPos: {x: 0, y: 0, z: 0}
 --- !u!224 &5108555927282909181
 RectTransform:
   m_ObjectHideFlags: 0

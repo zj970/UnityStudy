@@ -293,7 +293,7 @@ public class GameManager : MonoBehaviour
     {
         StopCoroutine("FollowConsiderating");//时间到了     
     }
-
+    7
 
 
 

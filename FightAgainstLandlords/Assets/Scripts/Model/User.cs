@@ -11,11 +11,14 @@ public enum PLAYER_TYPE
     /// <summary>
     /// 农民
     /// </summary>
-    FARMER = 0,
+    FARMERA = 0,
+    FARMERB = 1,
     /// <summary>
     /// 地主
     /// </summary>
-    LANDLORD = 1
+    LANDLORD = 2,
+
+
 }
 
 /// <summary>
@@ -49,38 +52,23 @@ public class User : MonoBehaviour
     //TODO:玩家手里面的牌
 
     //存放扑克牌
+    /// <summary>
+    /// 玩家手中的牌
+    /// </summary>
     public List<Card> playerPokers = new List<Card>();
+    //TODO:初始化出牌的容器
+    /// <summary>
+    /// 出牌的容器
+    /// </summary>
+    public List<Card> outCards = new List<Card>();
 
-    
 
     //玩家类型
-    public PLAYER_TYPE player_type = PLAYER_TYPE.FARMER;//默认为农民
+    public PLAYER_TYPE player_type = PLAYER_TYPE.FARMERA;//默认为农民
     //玩家状态 
     public PLAYER_STATE player_state = PLAYER_STATE.PREGAME;//默认为准备状态
 
     public bool isMyTerm = false;  //当前是否是自己回合
-
-
-    //TODO:直接选择当农民还是地主
-
-    /// <summary>
-    /// 当农民
-    /// </summary>
-    public void btn_farmer()
-    {
-        player_type = PLAYER_TYPE.FARMER;//设置为农民
-    }
-
-    /// <summary>
-    /// 当地主
-    /// </summary>
-    public void btn_landlord()
-    {
-        player_type = PLAYER_TYPE.LANDLORD;//设置为地主
-        
-        //TODO:获得底牌
-    }
-
 
     //TODO：写一个出牌的方法 : 只有当属于自己的回合的时候才能出牌
     /// <summary>
@@ -104,9 +92,12 @@ public class User : MonoBehaviour
         //关闭倒计时
         GameManager._instance.StopCountDown();
         //选择的牌，添加到出牌区域
+        //GameManager._instance.PopCards.SetActive(true);
         GameManager._instance.btn_LandlordPlay();
-        isMyTerm = false;
+        //判断能否出牌
+        //GameManager._instance.LookPlayCards(GameManager._instance.player.playerPokers);//当前回合玩家所拥有的牌
 
+        isMyTerm = false;
     }
 
     /// <summary>
@@ -117,9 +108,7 @@ public class User : MonoBehaviour
         //关闭倒计时
         GameManager._instance.StopCountDown();
         isMyTerm = false;//顺序很重要！！！！！！！！！！！！！！！！！！！！！！！！！！！
-        GameManager._instance.NotFollow();
-
-
+        GameManager._instance.NotFollow();   
     }
 
    

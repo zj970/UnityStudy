@@ -17,10 +17,13 @@ public class RankingListController : MonoBehaviour
     public Text No3Name;
     public Text No3Intergral;
 
+
+    //Json解析
+
     public void btn_Rank()
     {
 
-            
+
         if (!isRank)
         {
             Ranking.SetActive(true);
@@ -37,5 +40,27 @@ public class RankingListController : MonoBehaviour
             Ranking.SetActive(false);
         }
         isRank = !isRank;
+    }
+
+    //
+    public void btn_show()
+    {
+        JsonScript.SortData();
+        if (!isRank)
+        {
+            Ranking.SetActive(true);
+            No1Name.text = JsonScript.reslut[0];
+            No1Intergral.text = JsonScript.reslutint[0].ToString();
+            No2Name.text = JsonScript.reslut[1];
+            No2Intergral.text = JsonScript.reslutint[1].ToString();
+            No3Name.text = JsonScript.reslut[2];
+            No3Intergral.text = JsonScript.reslutint[2].ToString();
+        }
+        else
+        {
+            //this.transform.position = pokerPos;//重置位置
+            Ranking.SetActive(false);
+        }
+            isRank = !isRank;       
     }
 }
