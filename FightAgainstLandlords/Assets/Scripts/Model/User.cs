@@ -58,17 +58,14 @@ public class User : MonoBehaviour
     public List<Card> playerPokers = new List<Card>();
     //TODO:初始化出牌的容器
     /// <summary>
-    /// 出牌的容器
+    /// 玩家类型
     /// </summary>
-    public List<Card> outCards = new List<Card>();
-
-
-    //玩家类型
     public PLAYER_TYPE player_type = PLAYER_TYPE.FARMERA;//默认为农民
     //玩家状态 
     public PLAYER_STATE player_state = PLAYER_STATE.PREGAME;//默认为准备状态
 
     public bool isMyTerm = false;  //当前是否是自己回合
+
 
     //TODO：写一个出牌的方法 : 只有当属于自己的回合的时候才能出牌
     /// <summary>
@@ -76,11 +73,17 @@ public class User : MonoBehaviour
     /// </summary>
     public void PopCards()
     {
-        isMyTerm = true;
-        GameManager._instance.StopCountDown();
-        //等待，开始计时
-        GameManager._instance.StartCountDown();
-
+        if (GameManager._instance.PlayOver())
+        {
+            GameManager._instance.StopCountDown();
+        }
+        else
+        {
+            isMyTerm = true;
+            GameManager._instance.StopCountDown();
+            //等待，开始计时
+            GameManager._instance.StartCountDown();
+        }
     }
 
     /// <summary>
@@ -88,16 +91,23 @@ public class User : MonoBehaviour
     /// </summary>
     public void ForFollow()
     {
+        if (GameManager._instance.PlayOver())
+        {
+            GameManager._instance.StopCountDown();
+        }
+        else
+        {
+            //关闭倒计时
+            GameManager._instance.StopCountDown();
+            //选择的牌，添加到出牌区域
+            //GameManager._instance.PopCards.SetActive(true);
+            GameManager._instance.btn_LandlordPlay();
+            //判断能否出牌
+            //GameManager._instance.LookPlayCards(GameManager._instance.player.playerPokers);//当前回合玩家所拥有的牌
 
-        //关闭倒计时
-        GameManager._instance.StopCountDown();
-        //选择的牌，添加到出牌区域
-        //GameManager._instance.PopCards.SetActive(true);
-        GameManager._instance.btn_LandlordPlay();
-        //判断能否出牌
-        //GameManager._instance.LookPlayCards(GameManager._instance.player.playerPokers);//当前回合玩家所拥有的牌
-
-        isMyTerm = false;
+            isMyTerm = false;
+        }
+ 
     }
 
     /// <summary>
@@ -112,6 +122,7 @@ public class User : MonoBehaviour
     }
 
    
+
     //TODO:把牌排列整齐
     //已在CardBox类中实现
 

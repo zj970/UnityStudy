@@ -74,19 +74,19 @@
     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/Unity-2018.4.3f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -290,34 +290,34 @@
       <HintPath>D:/Unity/Unity-2018.4.3f1/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="I18N.CJK">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/I18N.CJK.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/I18N.CJK.dll</HintPath>
     </Reference>
     <Reference Include="I18N">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/I18N.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/I18N.dll</HintPath>
     </Reference>
     <Reference Include="I18N.West">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/I18N.West.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/I18N.West.dll</HintPath>
     </Reference>
     <Reference Include="mysql.data">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/mysql.data.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/System.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="System.Json">
-      <HintPath>F:/GitHubWarehouse/UnityStudy/FightAgainstLandlords/Assets/Plugins/System.Json.dll</HintPath>
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>E:/unityProjectEngineering/FightAgainstLandlords/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Unity/Unity-2018.4.3f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

@@ -155,7 +155,7 @@ public class CardRule
             return false;
         }
 
-        for (int i = 0; i < cards.Count; i += 2)
+        for (int i = 0; i < cards.Count - 1; i += 2)
         {
             if (cards[i].cardIndex != cards[i + 1].cardIndex)
             {
@@ -169,7 +169,7 @@ public class CardRule
                 }
             }
             //不超过A
-            if (cards[i].cardIndex > 12 || cards[i-1].cardIndex > 12)
+            if (cards[i].cardIndex > 12 || cards[i+1].cardIndex > 12)
             {
                 return false;
             }
@@ -313,7 +313,7 @@ public class CardRule
         {
             return false;
         }
-        for (int i = 0; i < cards.Count; i += 3)
+        for (int i = 0; i < cards.Count - 2; i += 3)
         {
             if (cards[i + 1].cardIndex != cards[i].cardIndex)
             {
@@ -489,7 +489,6 @@ public class CardRule
 
     /*************************************************辅助方法**********************************************************/
 
-
     /// <summary>
     /// 判断手中的牌是否全是对子
     /// </summary>
@@ -506,7 +505,6 @@ public class CardRule
         }
         return true;
     }
-
 
     /// <summary>
     /// 是否里面拥有四张牌
@@ -534,9 +532,6 @@ public class CardRule
     }
 
     /*************************************************辅助方法**********************************************************/
-
-
-
 
     #region 判断是否能出手
     /// <summary>
@@ -796,4 +791,6 @@ public class CardRule
         return isRule;
     }
     #endregion
+
+
 }

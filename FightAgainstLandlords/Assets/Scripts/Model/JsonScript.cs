@@ -134,6 +134,54 @@ public class JsonScript : MonoBehaviour
         reslutint[2] = sortJSON.Messages[sortJSON.Messages.Count - 3].Score;
     }
 
+    /// <summary>
+    /// 根据名字设置分数
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="score"></param>
+    public static void SetScore(string name, int score)
+    {
+
+        userJSON userJSON = ParseJSONData();
+        tempJson.Clear();
+        for (int i = 0; i < userJSON.Messages.Count; i++)
+        {
+            if (userJSON.Messages[i].userName == name)
+            {
+                userJSON.Messages[i].Score += score;
+            }
+            JsonObject message_1 = new JsonObject();
+
+            // 填充数据
+            message_1.Add("userName", userJSON.Messages[i].userName);
+            message_1.Add("Score", userJSON.Messages[i].Score);
+            tempJson.Add(message_1);
+            print(userJSON.Messages[i].Score); //93 95 96 99
+        }
+
+        // 写一个大括号
+        JsonObject Users = new JsonObject();
+        // 信息数组
+        JsonArray MessageArr = new JsonArray();
+
+        for (int i = 0; i < tempJson.Count; i++)
+        {
+            MessageArr.Add(tempJson[i]);
+        }
+
+        //MessageArr.Add(message_1);
+
+        Users.Add("Messages", MessageArr);
+        Users.Add("tableName", "Users");
+        // 拓展-- 数据留存档
+        // 创建数据流的写入
+        StreamWriter writer = new StreamWriter(Application.dataPath + "/StreamingAssets/Json/MySystemJSON.txt");
+        Users.Save(writer);
+        //自动装载缓冲区
+        //writer.AutoFlush = true;
+        writer.Close();
+    }
+
 
     //创建数据模型 接受解析数据 [因为我们是面向对象开发的]
     // 将我们在需要数据的地方直接使用类就可以点出这个模型

@@ -1,1 +1,1 @@
-{"Messages": [{"userName": "admin", "Score": 48}, {"userName": "123", "Score": 90}, {"userName": "1233", "Score": 22}], "tableName": "Users"}
+{"Messages": [{"userName": "admin", "Score": 88}, {"userName": "123", "Score": 130}, {"userName": "1233", "Score": 22}], "tableName": "Users"}
